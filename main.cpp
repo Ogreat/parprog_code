@@ -28,7 +28,7 @@ void initialization(char** argv)  //инициализация
     listS = (union Int32 *)malloc(size * sizeof(union Int32));
     for (i = 0; i < size; i++)
     {
-        listS[i].x = list[i].x = rand() % 500000 - 100000;
+        listS[i].x = list[i].x = rand() % 500000 - 10000;
     }
 
     threads = atoi(argv[2]);//число потоков берется из консоли
