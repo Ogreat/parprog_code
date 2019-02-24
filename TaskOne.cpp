@@ -1,19 +1,18 @@
-﻿
-#include <stdio.h>
-#include <stdlib.h>
+
+
+#include <iostream> 
 #include <omp.h>
-#include <iostream>
-#include <vector>
+#include <random> 
+#include <ctime> 
+#include <chrono>
 union Int32
 {
     int x;
     unsigned char bytes[4];
 };
-
-
 union Int32 *list;        //массив для параллельной версии
 union Int32 *listS;       //массив для последовательной версии
-int size;//размер обрабатываемого массива
+int Size;//размер обрабатываемого массива
 
 int threads;//число потоков
 
@@ -22,13 +21,13 @@ int *step;//массив номеров элементов, откуда нач�
 void initialization(char** argv)  //инициализация 
 {
     int i;
-    size = atoi(argv[1]);//размер массива берется из консоли
+    Size = atoi(argv[1]);//размер массива берется из консоли
 
-    list = (union Int32 *)malloc(size * sizeof(union Int32));
-    listS = (union Int32 *)malloc(size * sizeof(union Int32));
-    for (i = 0; i < size; i++)
+    list = (union Int32 *)malloc(Size * sizeof(union Int32));
+    listS = (union Int32 *)malloc(Size * sizeof(union Int32));
+    for (i = 0; i < Size; i++)
     {
-        listS[i].x = list[i].x = rand() % 50000 - 10000;
+        listS[i].x = list[i].x = rand() % 50 - 10;
     }
 
     threads = atoi(argv[2]);//число потоков берется из консоли
@@ -37,126 +36,17 @@ void initialization(char** argv)  //инициализация
 
     for (i = 0; i < threads; i++)
     {
-        step[i] = i * size / threads;
+        step[i] = i * Size / threads;
     }
-    step[threads] = size;
+    step[threads] = Size;
 
 }
-
-//четно-нечетное слияние Бэтчера 
-void exchange(union Int32* list, int i, int j)
-{
-    int t = list[i].x;
-    list[i].x = list[j].x;
-    list[j].x = t;
-}
-void compare(union Int32* list, int i, int j)
-{
-    if (list[i].x > list[j].x)
-        exchange(list, i, j);
-}
-//lo - начальная позиция 
-//n - длина части, подлежащей объединению,
-//r - расстояние элементов, подлежащих сравнению
-void oddEvenMerge(union Int32* list, int lo, int n, int r)
-{
-    int m = r * 2;
-    if (m < n)
-    {
-
-#pragma omp parallel sections
-        {
-
-#pragma omp section 
-            {
-                oddEvenMerge(list, lo, n, m); // четная подпоследовательность
-            }
-#pragma omp section 
-            {
-                oddEvenMerge(list, lo + r, n, m);// нечетная 
-            }
-        }
-        int k = lo + n;
-        int g = k - r;
-
-        for (int i = lo + r; i < g; i += m)
-        {
-            compare(list, i, i + r);
-        }
-    }
-    else
-    {
-        compare(list, lo, lo + r);
-    }
-}
-
-//сортировка слиянием
-void merge(union Int32* A, union Int32* B, int size1, int size2)//слияние
-{
-    int i = 0, j = 0, k = 0, t;
-    int size = size1 + size2;
-    int *temp = (int *)malloc(size * sizeof(int));//буфер для слияния
-
-
-    while (i < size1 && j < size2) {
-        if (A[i].x <= B[j].x)
-        {
-            temp[k] = A[i++].x;
-        }
-        else { temp[k] = B[j++].x; }
-        k++;
-    }
-
-    if (i < size1) {
-        for (t = i; t < size1; t++, k++)   // скопировать остальные элементы отсортированного массива A в массив temp
-            temp[k] = A[t].x;
-    }
-    else {
-        for (t = j; t < size2; t++, k++)
-            temp[k] = B[t].x;
-    }
-
-    for (i = 0; i < size; i++)
-        A[i].x = temp[i];
-
-    free(temp);
-}
-void sort(union Int32* list, int size, int *step, int s) //сборка частей
-                                                 //s - число потоков
-{
-    int i;
-    while ((s > 1) && (s != 2))
-    {
-        for (i = 0; i < s; i++)
-        {
-            step[i] = i * size / s;
-        }
-        step[s] = size;
-        //параллельное слияние 
-#pragma omp parallel for private(i) 
-        for (i = 0; i < s; i = i + 2)
-        {
-            merge(list + step[i], list + step[i + 1], step[i + 1] - step[i], step[i + 2] - step[i + 1]);
-        }
-
-        s = s / 2;
-    }
-    int fin_step = size / 2;
-    //финальное слияние двух отсортированных массивов
-    merge(list, list + fin_step, fin_step, size - fin_step);
-}
-
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-#include <stdlib.h>
-#include <limits.h>
-
 
 // Сортируем целые числа без знака по n-байту.
-static void radix_sort_byte(union Int32* arr,int left, int right, int nByte)
+static void radix_sort_byte(union Int32* arr, int left, int right, int nByte)
 {
     union Int32 *p;
-    p = (union Int32*)malloc((right-left) * sizeof(union Int32));
+    p = (union Int32*)malloc((right - left) * sizeof(union Int32));
     //257 , т.к ещё есть знак "минус"
     int count[257] = { 0 }, i;
 
@@ -170,26 +60,200 @@ static void radix_sort_byte(union Int32* arr,int left, int right, int nByte)
         p[count[arr[i].bytes[nByte]]++] = arr[i];
 
     for (i = left; i < right; i++)
-        arr[i] = p[i-left];
+        arr[i] = p[i - left];
 
     free(p);
 }
 
 // Сортировка целых чисел со знаком: переключаем знаковый бит, сортируем как беззнаковые, возвращаем знаковый бит.
-static void radix_sort(union Int32* arr,int left,int right)
+static void radix_sort(union Int32* arr, int left, int right)
 {
     int i;
-   unsigned *x = (unsigned*)arr;
+    unsigned *x = (unsigned*)arr;
 
     for (i = left; i < right; i++)
         x[i] ^= INT_MIN;
 
     // Сортируем числа от младшего байта к старшему.
     for (i = 0; i < 4; i++)
-        radix_sort_byte(arr,left,right, i);
+        radix_sort_byte(arr, left, right, i);
 
     for (i = left; i < right; i++)
         x[i] ^= INT_MIN;
+}
+//EvenSplitter  выполняет слияние чётных элементов массива
+void  EvenSplitter(union Int32* mas, union Int32* tmp, int size1, int size2)
+{
+    for (int i = 0; i < size1; i += 2)
+        tmp[i] = mas[i];
+
+    union Int32* mas2 = mas + size1;
+
+    int a = 0;
+    int b = 0;
+    int i = 0;
+
+    while ((a < size1) && (b < size2))
+    {
+        if (tmp[a].x <= mas2[b].x)
+        {
+            mas[i] = tmp[a];
+            a += 2;
+        }
+        else
+        {
+            mas[i] = mas2[b];
+            b += 2;
+        }
+
+        i += 2;
+    }
+
+    if (a == size1)
+        for (int j = b; j < size2; j += 2, i += 2)
+            mas[i] = mas2[j];
+    else
+        for (int j = a; j < size1; j += 2, i += 2)
+            mas[i] = tmp[j];
+}
+
+
+//и OddSplitter выполняет слияние нечётных элементов массива
+void  OddSplitter(union Int32* mas, union Int32* tmp, int size1, int size2)
+{
+    for (int i = 1; i < size1; i += 2)
+        tmp[i] = mas[i];
+
+    union Int32 *mas2 = mas + size1;
+
+    int a = 1;
+    int b = 1;
+    int i = 1;
+
+    while ((a < size1) && (b < size2))
+    {
+        if (tmp[a].x <= mas2[b].x)
+        {
+            mas[i] = tmp[a];
+            a += 2;
+        }
+        else
+        {
+            mas[i] = mas2[b];
+            b += 2;
+        }
+
+        i += 2;
+    }
+
+    if (a == size1)
+        for (int j = b; j < size2; j += 2, i += 2)
+            mas[i] = mas2[j];
+    else
+        for (int j = a; j < size1; j += 2, i += 2)
+            mas[i] = tmp[j];
+}
+
+//выполняется сравнение чётных и нечётных пар элементов массива, проходя по массиву один раз.
+void SimpleComparator(union Int32* mas, int size)
+{
+    for (int i = 1; i < (size + 1) / 2; i++)
+        if (mas[2 * i].x < mas[2 * i - 1].x)
+        {
+            int tmp = mas[2 * i - 1].x;
+            mas[2 * i - 1] = mas[2 * i];
+            mas[2 * i].x = tmp;
+        }
+}
+
+
+
+void ParallelSort(union Int32* data, int size, int pnum, int *step)
+{
+
+        union Int32* tmp = (union Int32*)malloc((size) * sizeof(union Int32));
+        int part_size = size / pnum;
+#pragma omp parallel shared(data, size, part_size, pnum, tmp) num_threads(pnum) 
+        {
+            int tid = omp_get_thread_num();
+
+#pragma omp barrier 
+            int level = pnum;
+            int s = part_size;
+            while (level != 1)
+            {
+
+                if (tid % 2 == 0 && tid < level)
+                {
+                    EvenSplitter(data + tid * s, tmp + tid * s, s, s);
+                }
+                if (tid % 2 == 1 && tid < level)
+                {
+                    int t = tid - 1;
+                    OddSplitter(data + t * s, tmp + tid * s, s, s);
+                }
+#pragma omp barrier 
+                if (tid % 2 == 0 && tid < level)
+                {
+                    SimpleComparator(data + tid * s, s * 2);
+                }
+#pragma omp barrier 
+                level /= 2;
+                s *= 2;
+            }
+        }
+        delete[] tmp;
+}
+void sort(union Int32* list, int size, int threads) //сборка частей
+                                                 //s - число потоков
+{
+    union Int32* tmp = (union Int32*)malloc((size) * sizeof(union Int32));
+    int tid;
+    int level = threads;
+    int *step;//шаги
+    step = (int *)malloc((threads + 1) * sizeof(int));
+    for (int i = 0; i < threads; i++)
+    {
+        step[i] = i * size / threads;
+    }
+    step[threads] = size;
+
+    while ((level != 1))
+    {
+        //параллельное слияние 
+#pragma omp parallel for private(tid) 
+        for (tid = 0; tid < threads; tid++)
+        {
+
+
+
+           if (tid % 2 == 0 )
+           {
+               EvenSplitter(list + step[tid], tmp + step[tid], step[tid + 1] - step[tid],step[tid + 1]- step[tid]);
+           }
+           if (tid % 2 == 1 )
+           {
+               OddSplitter(list + step[tid-1], tmp + step[tid-1], step[tid ] - step[tid-1], step[tid ]- step[tid-1]);
+           }
+
+        }
+#pragma omp parallel for private(tid) 
+        for (tid = 0; tid < threads; tid++)
+        {
+            if (tid % 2 == 1)
+            {
+                SimpleComparator(list + step[tid - 1], step[tid + 1] - step[tid - 1]);
+            }
+        }
+
+        level = level / 2;
+        for (int i = 0; i < level; i++)
+        {
+            step[i] = i * size / level;
+        }
+        step[level] = size;
+    }
+
 }
 
 int main(int argc, char **argv)
@@ -199,97 +263,91 @@ int main(int argc, char **argv)
 
     initialization(argv);
 
-        if (size < 33)
+    if (Size < 33)
+    {
+        std::cout << "\n" << " Input: " << "\n";
+        for (int i = 0; i < Size; i++)
         {
-            std::cout << "\n" << " Input: " << "\n";
-            for (int i = 0; i < size; i++)
-            {
-                std::cout << list[i].x << "|";
-            }
+            std::cout << list[i].x << "|";
         }
-        std::cout << "\n" << " Steps:" << "\n";
-        for (int j = 0; j < threads+1; j++)
+    }
+    std::cout << "\n" << " Steps:" << "\n";
+    for (int j = 0; j < threads + 1; j++)
+    {
+        std::cout << "=>" << step[j];
+    }
+
+    //Последовательная сортировка
+    omp_set_num_threads(1);
+
+    double start_timeS = omp_get_wtime();
+
+    for (int i = 0; i < threads; i++)
+    {
+        radix_sort(listS, step[i], step[i + 1]);
+    }
+    if (Size < 33)
+    {
+        std::cout << "\n\n" << " After Serial Radix: " << "\n";
+        for (int i = 0; i < Size; i++)
         {
-            std::cout << "=>" << step[j];
+            std::cout << listS[i].x << "|";
         }
-
-        //Последовательная сортировка
-        omp_set_num_threads(1);
-
-        double start_timeS = omp_get_wtime();
-       
-        for (int i = 0; i < threads; i++)
+    }
+    sort(listS, Size, threads);
+    //ParallelSort(listS, Size, threads,step);
+    if (Size < 33)
+    {
+        std::cout << "\n\n" << " After Serial Batcher : " << "\n";
+        for (int i = 0; i < Size; i++)
         {
-            radix_sort(listS, step[i], step[i + 1]);
+            std::cout << listS[i].x << "|";
         }
-        if (size < 33)
-        {
-            std::cout << "\n\n" << " After Serial Radix: " << "\n";
-            for (int i = 0; i < size; i++)
-            {
-                std::cout << listS[i].x << "|";
-            }
-        }
-        sort(listS, size, step, threads);//сортировка слиянием, пока не останется 2 половинки
-        if (size < 33)
-        {
-            std::cout << "\n\n" << " After Serial Batcher : " << "\n";
-            for (int i = 0; i < size; i++)
-            {
-                std::cout << listS[i].x << "|";
-            }
-        }
-        double end_timeS = omp_get_wtime();
-        
-        std::cout << "\n\n Time Serial Radix with Batcher: \n" << end_timeS - start_timeS;
-        free(listS);
+    }
+    double end_timeS = omp_get_wtime();
 
-        //Параллельная сортировка со слиянием
-        omp_set_num_threads(threads);
+    std::cout << "\n\n Time Serial Radix with Batcher: \n" << end_timeS - start_timeS;
+    free(listS);
+
+    //Параллельная сортировка со слиянием
+    omp_set_num_threads(threads);
 
 
-        double start_time = omp_get_wtime();
+    double start_time = omp_get_wtime();
 
 #pragma omp parallel for private(i) //каждый поток отсортирует свою часть
-        for (i = 0; i < threads; i++)
-        {
-            radix_sort(list, step[i], step[i+1]);          
-        }
+    for (i = 0; i < threads; i++)
+    {
+        radix_sort(list, step[i], step[i + 1]);
+    }
 
-        if (size < 33)
+    if (Size < 33)
+    {
+        std::cout << "\n\n" << " After Parallel Radix: " << "\n";
+        for (int i = 0; i < Size; i++)
         {
-            std::cout << "\n\n" << " After Parallel Radix: " << "\n";
-            for (int i = 0; i < size; i++)
+            std::cout << list[i].x << "|";
+        }
+    }
+    std::cout << "\n\n";
+    //Параллельное слияние
+    double end_time;
+    if (threads > 1)
+    {
+        sort(list, Size, threads);
+       // ParallelSort(list, Size, threads,step);
+        if (Size < 33)
+        {
+            std::cout << " After Parallel Batcher :" << "\n";
+            for (int i = 0; i < Size; i++)
             {
                 std::cout << list[i].x << "|";
             }
         }
-        std::cout << "\n\n";
-        //Параллельное слияние
-        double end_time;
-        if (threads > 1)
-        {
-        
-            sort(list, size, step, threads);
-         
-            if (size < 33)
-            {
-                std::cout <<  " After Parallel Batcher :" << "\n";
-                for (int i = 0; i < size; i++)
-                {
-                    std::cout << list[i].x << "|";
-                }
-            }
-            end_time = omp_get_wtime();
-            std::cout << "\n\n Time Parallel Radix with Batcher: \n" << end_time - start_time;
+        end_time = omp_get_wtime();
+        std::cout << "\n\n Time Parallel Radix with Batcher: \n" << end_time - start_time;
 
-            std::cout << "\n\n Jump: \n" << (end_timeS - start_timeS) / (end_time - start_time);
-        }
-
-       
-       
-
-       free(list);
+        std::cout << "\n\n Jump: \n" << (end_timeS - start_timeS) / (end_time - start_time);
+    }
+    free(list);
 }
-
-
