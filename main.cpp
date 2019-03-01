@@ -1,4 +1,3 @@
-
 // Copyright 2019 Lalykin Oleg
 #include <omp.h>
 #include <iostream> 
@@ -44,6 +43,12 @@ public:
             Step[i] = i * Size / threads + (i * Size / threads) % 2;
         }
         Step[threads] = Size;
+    }
+    void Destructor()
+    {
+        delete[] Step;
+        delete[] list;
+        delete[] listS;
     }
 
     // Сортируем целые числа без знака по n-байту
@@ -261,9 +266,7 @@ public:
 
         PrintTimeRes(TimeS, TimeP);
         Check(list, Size);
-        delete[] Step;
-        delete[] list;
-        delete[] listS;
+        Destructor();
     }
 
 };
