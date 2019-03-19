@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_g2y1cHWEEeSWE87kHCDn6g" name="game_server_server">
+    <eAnnotations xmi:id="_hAXoMHWEEeSWE87kHCDn6g" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_hAXoMXWEEeSWE87kHCDn6g" source="codegen">
+        <details xmi:id="_hAXoMnWEEeSWE87kHCDn6g" key="codegenDirectory" value="/game-server/src"/>
+        <details xmi:id="_hV060HWEEeSWE87kHCDn6g" key="AssociatedSourceCode" value="/game-server/src/game/server/GameServer.java;1148523158/1;/game-server/src/game/server/ServerCallbacks.java;3605139671/1;/game-server/src/game/server/impl/GameServerImpl.java;435577142/1;/game-server/src/game/server/impl/ServerCallbacksAdapter.java;2257561013/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_hLViEHWEEeSWE87kHCDn6g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_hLViEXWEEeSWE87kHCDn6g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_hLWJIHWEEeSWE87kHCDn6g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_hLWJIXWEEeSWE87kHCDn6g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_hLWJInWEEeSWE87kHCDn6g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_hLWJI3WEEeSWE87kHCDn6g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_hLWJJHWEEeSWE87kHCDn6g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_hLWJJXWEEeSWE87kHCDn6g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_hLiWYHWEEeSWE87kHCDn6g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_hKueEHWEEeSWE87kHCDn6g" name="game">
+      <packagedElement xmi:type="uml:Package" xmi:id="_hKvFIHWEEeSWE87kHCDn6g" name="enigne">
+        <packagedElement xmi:type="uml:Package" xmi:id="_hK75cHWEEeSWE87kHCDn6g" name="callbacks"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hPAhIHWEEeSWE87kHCDn6g" name="BoardWall"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hPBvQHWEEeSWE87kHCDn6g" name="Player"/>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_hPCWUXWEEeSWE87kHCDn6g" name="Side"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hPtEsHWEEeSWE87kHCDn6g" name="GameBoard"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_hK1LwHWEEeSWE87kHCDn6g" name="server">
+        <packagedElement xmi:type="uml:Package" xmi:id="_hLCnIHWEEeSWE87kHCDn6g" name="impl">
+          <packagedElement xmi:type="uml:Class" xmi:id="_hMLPkHWEEeSWE87kHCDn6g" clientDependency="_hPUDIXWEEeSWE87kHCDn6g" name="GameServerImpl">
+            <generalization xmi:id="_hPzyYHWEEeSWE87kHCDn6g" general="_hPQ_0XWEEeSWE87kHCDn6g"/>
+            <ownedAttribute xmi:id="_hP4q4HWEEeSWE87kHCDn6g" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hP5R8HWEEeSWE87kHCDn6g" value="-7361683859730230055L"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_hP5R8XWEEeSWE87kHCDn6g" name="board" visibility="private" isStatic="true" type="_hPtEsHWEEeSWE87kHCDn6g" association="_hQWk8HWEEeSWE87kHCDn6g"/>
+            <ownedAttribute xmi:id="_hP55AXWEEeSWE87kHCDn6g" name="obj" visibility="private" isStatic="true" type="_hMLPkHWEEeSWE87kHCDn6g" association="_hQXMAXWEEeSWE87kHCDn6g"/>
+            <ownedAttribute xmi:id="_hP6gEHWEEeSWE87kHCDn6g" name="DEF_SIZE" isLeaf="true" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hP6gEXWEEeSWE87kHCDn6g" value="7"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_hP6gEnWEEeSWE87kHCDn6g" name="callbacks" visibility="private" isStatic="true" type="_hL-bQHWEEeSWE87kHCDn6g" isOrdered="true" association="_hQYaIHWEEeSWE87kHCDn6g">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hP6gE3WEEeSWE87kHCDn6g" value="*"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hP7HIHWEEeSWE87kHCDn6g" value="null"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_hP7HInWEEeSWE87kHCDn6g" name="playersList" visibility="private" type="_hPBvQHWEEeSWE87kHCDn6g" isOrdered="true" association="_hQZBMHWEEeSWE87kHCDn6g">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hP7uMHWEEeSWE87kHCDn6g" value="*"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_hP7uMnWEEeSWE87kHCDn6g" name="playerCount" visibility="private" isStatic="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hP8VQHWEEeSWE87kHCDn6g" value="0"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_hP88UHWEEeSWE87kHCDn6g" name="sc" visibility="private" isStatic="true" type="_hPTcEHWEEeSWE87kHCDn6g" association="_hQZoQXWEEeSWE87kHCDn6g"/>
+            <ownedAttribute xmi:id="_hP9jYHWEEeSWE87kHCDn6g" name="gameOn" visibility="private" isStatic="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hP9jYXWEEeSWE87kHCDn6g" value="false"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_hPUDIXWEEeSWE87kHCDn6g" client="_hMLPkHWEEeSWE87kHCDn6g" supplier="_hLU7AHWEEeSWE87kHCDn6g" contract="_hLU7AHWEEeSWE87kHCDn6g"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hP_YkHWEEeSWE87kHCDn6g" name="addCallbackListener" specification="_hPVRQHWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hP_YkXWEEeSWE87kHCDn6g" name="listener" type="_hL-bQHWEEeSWE87kHCDn6g"/>
+              <language>java</language>
+              <body>callbacks.add(listener);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hP__oHWEEeSWE87kHCDn6g" name="GameServerImpl" specification="_hMOS4HWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hP__oXWEEeSWE87kHCDn6g" name="w">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hP__onWEEeSWE87kHCDn6g" name="h">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hP__o3WEEeSWE87kHCDn6g" type="_hMLPkHWEEeSWE87kHCDn6g" direction="return"/>
+              <language>java</language>
+              <body>board = new GameBoard(w&lt;1 ? DEF_SIZE : w, h&lt;1 ? DEF_SIZE : h);&#xD;
+		callbacks = new ArrayList&lt;ServerCallbacks>();&#xD;
+		playersList = new ArrayList&lt;Player>();&#xD;
+		System.out.println(&quot;-> Gameboard created&quot;);&#xD;
+		System.out.println(&quot;\tWidth &quot; + board.getWidht());&#xD;
+		System.out.println(&quot;\tHeigth &quot; + board.getHeight());&#xD;
+		board.addCallbackListener(new BoardCallbacks() {&#xD;
+			@Override&#xD;
+			public void boardChanege() {&#xD;
+				if (callbacks != null)&#xD;
+					try {&#xD;
+						for(ServerCallbacks sc : callbacks) sc.boardChanege();&#xD;
+					} catch (RemoteException e) { e.printStackTrace(); }&#xD;
+			}&#xD;
+			@Override&#xD;
+			public void nextPlayer(Player next) &#xD;
+			{ &#xD;
+				System.out.println(&quot;-> Next: &quot; + next.getName());&#xD;
+				&#xD;
+				if (callbacks != null)&#xD;
+					try {&#xD;
+						for(ServerCallbacks sc : callbacks) sc.nextPlayer(next);&#xD;
+					} catch (RemoteException e) { e.printStackTrace(); }&#xD;
+			}&#xD;
+			@Override&#xD;
+			public void updateScore(Player player) {&#xD;
+				System.out.println(&quot;-> Update score: &quot;);&#xD;
+				printPlayersList();&#xD;
+				if (callbacks != null)&#xD;
+					try {&#xD;
+						for(ServerCallbacks sc : callbacks) sc.updateScore(player.getID(), player.getScore());&#xD;
+					} catch (RemoteException e) { e.printStackTrace(); }&#xD;
+			}&#xD;
+			@Override&#xD;
+			public void gameOver(Player winner) {&#xD;
+				Collections.sort(playersList, new PlayerComp());&#xD;
+				if (callbacks != null)&#xD;
+					try {&#xD;
+						for(ServerCallbacks sc : callbacks) sc.gameOver(winner.getID());&#xD;
+					} catch (RemoteException e) { e.printStackTrace(); }&#xD;
+				System.out.println(&quot;-> Game Over&quot;);&#xD;
+				System.out.println(&quot;-> Winner: &quot; + winner.getName());&#xD;
+				printPlayersList();		&#xD;
+			}&#xD;
+		});&#xD;
+		System.out.println(&quot;-> Gameboard listener added&quot;);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hP__pHWEEeSWE87kHCDn6g" name="main" specification="_hMPhAHWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hP__pXWEEeSWE87kHCDn6g" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hP__pnWEEeSWE87kHCDn6g" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>sc = new Scanner(System.in);&#xD;
+		System.out.println(&quot;-> Start server ...&quot;);&#xD;
+		try {&#xD;
+			if (args.length&lt;2) obj = new GameServerImpl(-1,-1);&#xD;
+			else obj = new GameServerImpl(Integer.parseInt(args[0]),Integer.parseInt(args[1]));&#xD;
+         Naming.rebind(RMI_NAME, obj);&#xD;
+         System.out.println(&quot;-> Server ready ...&quot;);&#xD;
+         System.out.println(&quot;-> Waiting for players ...&quot;);&#xD;
+         boolean flag = true;&#xD;
+         while(flag) {&#xD;
+         	if (playerCount>=2) {&#xD;
+         		System.out.println(&quot;-> There are &quot; + playerCount + &quot; players. Start game? [y/n]&quot;);&#xD;
+     			String out = sc.next();&#xD;
+     			if (out.equals(&quot;y&quot;) || out.equals(&quot;Y&quot;))  &#xD;
+     			{ &#xD;
+     				for(ServerCallbacks sc : callbacks) sc.startGame();&#xD;
+     				board.startGame(); flag = false; gameOn = true;  }&#xD;
+     			else System.out.println(&quot;-> Waiting for players ...&quot;);&#xD;
+         	}&#xD;
+         }&#xD;
+     } catch (Exception e) {&#xD;
+         System.err.println(&quot;Server exception: &quot; + e.getMessage());&#xD;
+         e.printStackTrace();&#xD;
+     }&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hQAmsHWEEeSWE87kHCDn6g" name="getWidht" specification="_hMQvIXWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hQAmsXWEEeSWE87kHCDn6g" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return board.getWidht(); </body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hQAmsnWEEeSWE87kHCDn6g" name="getHeight" specification="_hMSkUXWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hQAms3WEEeSWE87kHCDn6g" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return board.getHeight(); </body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hQAmtHWEEeSWE87kHCDn6g" name="getCellPlayer" specification="_hMVAkHWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hQAmtXWEEeSWE87kHCDn6g" name="i">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hQAmtnWEEeSWE87kHCDn6g" name="j">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hQAmt3WEEeSWE87kHCDn6g" type="_hPBvQHWEEeSWE87kHCDn6g" direction="return"/>
+              <language>java</language>
+              <body>return board.getCellPlayer(i, j); </body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hQBNwHWEEeSWE87kHCDn6g" name="getCellWall" specification="_hPu54HWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hQBNwXWEEeSWE87kHCDn6g" name="i">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hQBNwnWEEeSWE87kHCDn6g" name="j">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hQBNw3WEEeSWE87kHCDn6g" name="side" type="_hPCWUXWEEeSWE87kHCDn6g"/>
+              <ownedParameter xmi:id="_hQBNxHWEEeSWE87kHCDn6g" type="_hPAhIHWEEeSWE87kHCDn6g" direction="return"/>
+              <language>java</language>
+              <body>return board.getCellWall(i, j, side); </body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hQB00HWEEeSWE87kHCDn6g" name="getCellInfo" specification="_hMYq8HWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hQB00XWEEeSWE87kHCDn6g" name="i">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hQB00nWEEeSWE87kHCDn6g" name="j">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hQB003WEEeSWE87kHCDn6g" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return board.getCellInfo(i, j); </body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hQB01HWEEeSWE87kHCDn6g" name="getCellPlayerInfo" specification="_hMagIHWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hQB01XWEEeSWE87kHCDn6g" name="i">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hQB01nWEEeSWE87kHCDn6g" name="j">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hQB013WEEeSWE87kHCDn6g" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return board.getCellPlayerInfo(i, j); </body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hQCb4HWEEeSWE87kHCDn6g" name="getCurrentPlayerID" specification="_hMcVUXWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hQCb4XWEEeSWE87kHCDn6g" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return board.getCurrentPlayer().getID(); </body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hQCb4nWEEeSWE87kHCDn6g" name="getPlayerslist" specification="_hMexkHWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hQCb43WEEeSWE87kHCDn6g" type="_hPBvQHWEEeSWE87kHCDn6g" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hQCb5HWEEeSWE87kHCDn6g" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return playersList;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hQCb5XWEEeSWE87kHCDn6g" name="cellClick" specification="_hPxWIHWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hQCb5nWEEeSWE87kHCDn6g" name="i">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hQCb53WEEeSWE87kHCDn6g" name="j">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hQCb6HWEEeSWE87kHCDn6g" name="side" type="_hPCWUXWEEeSWE87kHCDn6g"/>
+              <language>java</language>
+              <body>board.cellClick(i, j, side); </body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hQDC8HWEEeSWE87kHCDn6g" name="printPlayersList" specification="_hMh04HWEEeSWE87kHCDn6g">
+              <language>java</language>
+              <body>for(Player p : playersList) &#xD;
+			System.out.println(&quot;\t &quot; + p.getID() + &quot; &quot; + p.getName() + &quot; $&quot; + p.getScore());&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hQDC8XWEEeSWE87kHCDn6g" name="addPlayer" specification="_hMib8HWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hQDC8nWEEeSWE87kHCDn6g" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hQDC83WEEeSWE87kHCDn6g" name="figure">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hQDC9HWEEeSWE87kHCDn6g" name="colorS">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hQDC9XWEEeSWE87kHCDn6g" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>if (!gameOn) {&#xD;
+		Color c = new Color(Integer.parseInt(colorS));&#xD;
+		Player p = new Player(name, figure, c);&#xD;
+		board.newPlayer(p);&#xD;
+		playersList.add(p);&#xD;
+		System.out.println(&quot;-> Player &quot; + name + &quot; joined ...&quot;);&#xD;
+		playerCount++;&#xD;
+		return p.getID();	&#xD;
+		} else return -1;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hQDqAHWEEeSWE87kHCDn6g" name="newMessage" specification="_hMk4MHWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hQDqAXWEEeSWE87kHCDn6g" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hQDqAnWEEeSWE87kHCDn6g" name="text">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>if (callbacks != null)&#xD;
+		try {&#xD;
+			for(ServerCallbacks sc : callbacks) sc.newMessageForChat(name, text);&#xD;
+		} catch (RemoteException e) { e.printStackTrace(); }&#xD;
+		&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_hMOS4HWEEeSWE87kHCDn6g" name="GameServerImpl" method="_hP__oHWEEeSWE87kHCDn6g" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+              <eAnnotations xmi:id="_hMOS43WEEeSWE87kHCDn6g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_hMO58HWEEeSWE87kHCDn6g" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_hMOS4XWEEeSWE87kHCDn6g" name="w">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hMOS4nWEEeSWE87kHCDn6g" name="h">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hMO58XWEEeSWE87kHCDn6g" type="_hMLPkHWEEeSWE87kHCDn6g" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_hMPhAHWEEeSWE87kHCDn6g" name="main" isStatic="true" method="_hP__pHWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hMPhAXWEEeSWE87kHCDn6g" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hMQIEHWEEeSWE87kHCDn6g" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_hMQvIXWEEeSWE87kHCDn6g" name="getWidht" method="_hQAmsHWEEeSWE87kHCDn6g" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hMRWMHWEEeSWE87kHCDn6g" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_hMSkUXWEEeSWE87kHCDn6g" name="getHeight" method="_hQAmsnWEEeSWE87kHCDn6g" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hMTLYHWEEeSWE87kHCDn6g" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_hMVAkHWEEeSWE87kHCDn6g" name="getCellPlayer" method="_hQAmtHWEEeSWE87kHCDn6g" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hMVAkXWEEeSWE87kHCDn6g" name="i">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hMVAknWEEeSWE87kHCDn6g" name="j">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hPuS0HWEEeSWE87kHCDn6g" type="_hPBvQHWEEeSWE87kHCDn6g" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_hMYq8HWEEeSWE87kHCDn6g" name="getCellInfo" method="_hQB00HWEEeSWE87kHCDn6g" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hMYq8XWEEeSWE87kHCDn6g" name="i">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hMYq8nWEEeSWE87kHCDn6g" name="j">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hMZSAHWEEeSWE87kHCDn6g" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_hMagIHWEEeSWE87kHCDn6g" name="getCellPlayerInfo" method="_hQB01HWEEeSWE87kHCDn6g" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hMagIXWEEeSWE87kHCDn6g" name="i">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hMbHMHWEEeSWE87kHCDn6g" name="j">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hMbHMXWEEeSWE87kHCDn6g" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_hMcVUXWEEeSWE87kHCDn6g" name="getCurrentPlayerID" method="_hQCb4HWEEeSWE87kHCDn6g" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hMc8YHWEEeSWE87kHCDn6g" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_hMexkHWEEeSWE87kHCDn6g" name="getPlayerslist" method="_hQCb4nWEEeSWE87kHCDn6g" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hMexkXWEEeSWE87kHCDn6g" type="_hPBvQHWEEeSWE87kHCDn6g" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hMexknWEEeSWE87kHCDn6g" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_hMh04HWEEeSWE87kHCDn6g" name="printPlayersList" visibility="private" method="_hQDC8HWEEeSWE87kHCDn6g"/>
+            <ownedOperation xmi:id="_hMib8HWEEeSWE87kHCDn6g" name="addPlayer" method="_hQDC8XWEEeSWE87kHCDn6g" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hMjDAHWEEeSWE87kHCDn6g" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hMjDAXWEEeSWE87kHCDn6g" name="figure">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hMjDAnWEEeSWE87kHCDn6g" name="colorS">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hMjDA3WEEeSWE87kHCDn6g" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_hMk4MHWEEeSWE87kHCDn6g" name="newMessage" method="_hQDqAHWEEeSWE87kHCDn6g" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hMk4MXWEEeSWE87kHCDn6g" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hMlfQHWEEeSWE87kHCDn6g" name="text">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_hPVRQHWEEeSWE87kHCDn6g" name="addCallbackListener" method="_hP_YkHWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hPV4UHWEEeSWE87kHCDn6g" name="listener" type="_hL-bQHWEEeSWE87kHCDn6g"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_hPu54HWEEeSWE87kHCDn6g" name="getCellWall" method="_hQBNwHWEEeSWE87kHCDn6g" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hPvg8HWEEeSWE87kHCDn6g" name="i">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hPvg8XWEEeSWE87kHCDn6g" name="j">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hPvg8nWEEeSWE87kHCDn6g" name="side" type="_hPCWUXWEEeSWE87kHCDn6g"/>
+              <ownedParameter xmi:id="_hPvg83WEEeSWE87kHCDn6g" type="_hPAhIHWEEeSWE87kHCDn6g" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_hPxWIHWEEeSWE87kHCDn6g" name="cellClick" method="_hQCb5XWEEeSWE87kHCDn6g" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hPxWIXWEEeSWE87kHCDn6g" name="i">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hPx9MHWEEeSWE87kHCDn6g" name="j">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hPx9MXWEEeSWE87kHCDn6g" name="side" type="_hPCWUXWEEeSWE87kHCDn6g"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_hMxFcHWEEeSWE87kHCDn6g" clientDependency="_hPfCQHWEEeSWE87kHCDn6g" name="ServerCallbacksAdapter" isAbstract="true">
+            <generalization xmi:id="_hP3cwHWEEeSWE87kHCDn6g" general="_hPQ_0XWEEeSWE87kHCDn6g"/>
+            <ownedAttribute xmi:id="_hP-xgHWEEeSWE87kHCDn6g" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hP-xgXWEEeSWE87kHCDn6g" value="1079040465565540056L"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_hPfCQHWEEeSWE87kHCDn6g" client="_hMxFcHWEEeSWE87kHCDn6g" supplier="_hL-bQHWEEeSWE87kHCDn6g" contract="_hL-bQHWEEeSWE87kHCDn6g"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hQRFYHWEEeSWE87kHCDn6g" name="ServerCallbacksAdapter" specification="_hMxsgHWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hQRFYXWEEeSWE87kHCDn6g" type="_hMxFcHWEEeSWE87kHCDn6g" direction="return"/>
+              <language>java</language>
+              <body>super();&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_hMxsgHWEEeSWE87kHCDn6g" name="ServerCallbacksAdapter" visibility="protected" method="_hQRFYHWEEeSWE87kHCDn6g" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+              <eAnnotations xmi:id="_hMyTkHWEEeSWE87kHCDn6g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_hMyTkXWEEeSWE87kHCDn6g" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_hMyTknWEEeSWE87kHCDn6g" type="_hMxFcHWEEeSWE87kHCDn6g" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_hMy6oHWEEeSWE87kHCDn6g" name="boardChanege" isAbstract="true" raisedException="_hPDkcXWEEeSWE87kHCDn6g"/>
+            <ownedOperation xmi:id="_hMzhsHWEEeSWE87kHCDn6g" name="updateScore" isAbstract="true" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hM0IwHWEEeSWE87kHCDn6g" name="playerID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hM0IwXWEEeSWE87kHCDn6g" name="score">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_hM0v0HWEEeSWE87kHCDn6g" name="startGame" isAbstract="true" raisedException="_hPDkcXWEEeSWE87kHCDn6g"/>
+            <ownedOperation xmi:id="_hM198HWEEeSWE87kHCDn6g" name="newMessageForChat" isAbstract="true" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hM198XWEEeSWE87kHCDn6g" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_hM198nWEEeSWE87kHCDn6g" name="text">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_hP21sHWEEeSWE87kHCDn6g" name="nextPlayer" isAbstract="true" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+              <ownedParameter xmi:id="_hP21sXWEEeSWE87kHCDn6g" name="next" type="_hPBvQHWEEeSWE87kHCDn6g"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_hQWk8HWEEeSWE87kHCDn6g" name="" memberEnd="_hQWk8XWEEeSWE87kHCDn6g _hP5R8XWEEeSWE87kHCDn6g">
+            <ownedEnd xmi:id="_hQWk8XWEEeSWE87kHCDn6g" name="" type="_hMLPkHWEEeSWE87kHCDn6g" association="_hQWk8HWEEeSWE87kHCDn6g"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_hQXMAXWEEeSWE87kHCDn6g" name="" memberEnd="_hQXMAnWEEeSWE87kHCDn6g _hP55AXWEEeSWE87kHCDn6g">
+            <ownedEnd xmi:id="_hQXMAnWEEeSWE87kHCDn6g" name="" type="_hMLPkHWEEeSWE87kHCDn6g" association="_hQXMAXWEEeSWE87kHCDn6g"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_hQYaIHWEEeSWE87kHCDn6g" name="" memberEnd="_hQYaIXWEEeSWE87kHCDn6g _hP6gEnWEEeSWE87kHCDn6g">
+            <ownedEnd xmi:id="_hQYaIXWEEeSWE87kHCDn6g" name="" type="_hMLPkHWEEeSWE87kHCDn6g" association="_hQYaIHWEEeSWE87kHCDn6g"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_hQZBMHWEEeSWE87kHCDn6g" name="" memberEnd="_hQZBMXWEEeSWE87kHCDn6g _hP7HInWEEeSWE87kHCDn6g">
+            <ownedEnd xmi:id="_hQZBMXWEEeSWE87kHCDn6g" name="" type="_hMLPkHWEEeSWE87kHCDn6g" association="_hQZBMHWEEeSWE87kHCDn6g"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_hQZoQXWEEeSWE87kHCDn6g" name="" memberEnd="_hQZoQnWEEeSWE87kHCDn6g _hP88UHWEEeSWE87kHCDn6g">
+            <ownedEnd xmi:id="_hQZoQnWEEeSWE87kHCDn6g" name="" type="_hMLPkHWEEeSWE87kHCDn6g" association="_hQZoQXWEEeSWE87kHCDn6g"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_hLU7AHWEEeSWE87kHCDn6g" name="GameServer">
+          <generalization xmi:id="_hPm-EHWEEeSWE87kHCDn6g" general="_hPC9YXWEEeSWE87kHCDn6g"/>
+          <ownedAttribute xmi:id="_hLi9cHWEEeSWE87kHCDn6g" name="RMI_SERVER" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_hLjkgHWEEeSWE87kHCDn6g" value="&quot;rmi://localhost/&quot;"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_hLkLkXWEEeSWE87kHCDn6g" name="RMI_NAME" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_hLkyoHWEEeSWE87kHCDn6g" value="&quot;GameServer&quot;"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_hLlZsXWEEeSWE87kHCDn6g" name="getWidht" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+            <ownedParameter xmi:id="_hLmAwHWEEeSWE87kHCDn6g" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_hLmn0HWEEeSWE87kHCDn6g" name="getHeight" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+            <ownedParameter xmi:id="_hLmn0XWEEeSWE87kHCDn6g" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_hLnO4HWEEeSWE87kHCDn6g" name="getCellPlayer" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+            <ownedParameter xmi:id="_hLn18HWEEeSWE87kHCDn6g" name="i">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_hLn18XWEEeSWE87kHCDn6g" name="j">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_hPnlIHWEEeSWE87kHCDn6g" type="_hPBvQHWEEeSWE87kHCDn6g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_hLprIHWEEeSWE87kHCDn6g" name="getCellInfo" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+            <ownedParameter xmi:id="_hLprIXWEEeSWE87kHCDn6g" name="i">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_hLprInWEEeSWE87kHCDn6g" name="j">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_hLprI3WEEeSWE87kHCDn6g" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_hLq5QHWEEeSWE87kHCDn6g" name="getCellPlayerInfo" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+            <ownedParameter xmi:id="_hLq5QXWEEeSWE87kHCDn6g" name="i">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_hLt8kHWEEeSWE87kHCDn6g" name="j">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_hLt8kXWEEeSWE87kHCDn6g" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_hLujoHWEEeSWE87kHCDn6g" name="getCurrentPlayerID" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+            <ownedParameter xmi:id="_hLujoXWEEeSWE87kHCDn6g" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_hLvKsHWEEeSWE87kHCDn6g" name="getPlayerslist" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+            <ownedParameter xmi:id="_hLvxwHWEEeSWE87kHCDn6g" type="_hPBvQHWEEeSWE87kHCDn6g" isOrdered="true" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hLvxwXWEEeSWE87kHCDn6g" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_hLxm8HWEEeSWE87kHCDn6g" name="addPlayer" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+            <ownedParameter xmi:id="_hLxm8XWEEeSWE87kHCDn6g" name="name">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_hLyOAHWEEeSWE87kHCDn6g" name="figure">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_hLyOAXWEEeSWE87kHCDn6g" name="colorS">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_hLyOAnWEEeSWE87kHCDn6g" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_hLy1EHWEEeSWE87kHCDn6g" name="newMessage" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+            <ownedParameter xmi:id="_hLzcIHWEEeSWE87kHCDn6g" name="name">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_hLzcIXWEEeSWE87kHCDn6g" name="text">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_hPGnwHWEEeSWE87kHCDn6g" name="addCallbackListener" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+            <ownedParameter xmi:id="_hPGnwXWEEeSWE87kHCDn6g" name="listener" type="_hL-bQHWEEeSWE87kHCDn6g"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_hPoMMHWEEeSWE87kHCDn6g" name="getCellWall" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+            <ownedParameter xmi:id="_hPoMMXWEEeSWE87kHCDn6g" name="i">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_hPoMMnWEEeSWE87kHCDn6g" name="j">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_hPoMM3WEEeSWE87kHCDn6g" name="side" type="_hPCWUXWEEeSWE87kHCDn6g"/>
+            <ownedParameter xmi:id="_hPozQHWEEeSWE87kHCDn6g" type="_hPAhIHWEEeSWE87kHCDn6g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_hPpaUHWEEeSWE87kHCDn6g" name="cellClick" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+            <ownedParameter xmi:id="_hPqBYHWEEeSWE87kHCDn6g" name="i">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_hPqBYXWEEeSWE87kHCDn6g" name="j">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_hPqBYnWEEeSWE87kHCDn6g" name="side" type="_hPCWUXWEEeSWE87kHCDn6g"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_hL-bQHWEEeSWE87kHCDn6g" name="ServerCallbacks">
+          <generalization xmi:id="_hPrPgHWEEeSWE87kHCDn6g" general="_hPC9YXWEEeSWE87kHCDn6g"/>
+          <generalization xmi:id="_hPrPgXWEEeSWE87kHCDn6g" general="_hPLgQHWEEeSWE87kHCDn6g"/>
+          <ownedOperation xmi:id="_hMAQcHWEEeSWE87kHCDn6g" name="boardChanege" raisedException="_hPDkcXWEEeSWE87kHCDn6g"/>
+          <ownedOperation xmi:id="_hMBekHWEEeSWE87kHCDn6g" name="updateScore" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+            <ownedParameter xmi:id="_hMBekXWEEeSWE87kHCDn6g" name="playerID">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_hMCFoHWEEeSWE87kHCDn6g" name="score">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_hMCssHWEEeSWE87kHCDn6g" name="startGame" raisedException="_hPDkcXWEEeSWE87kHCDn6g"/>
+          <ownedOperation xmi:id="_hMDTwHWEEeSWE87kHCDn6g" name="newMessageForChat" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+            <ownedParameter xmi:id="_hMDTwXWEEeSWE87kHCDn6g" name="name">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_hMD60HWEEeSWE87kHCDn6g" name="text">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_hMFI8HWEEeSWE87kHCDn6g" name="gameOver" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+            <ownedParameter xmi:id="_hMFI8XWEEeSWE87kHCDn6g" name="idWinner">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_hPr2kHWEEeSWE87kHCDn6g" name="nextPlayer" raisedException="_hPDkcXWEEeSWE87kHCDn6g">
+            <ownedParameter xmi:id="_hPr2kXWEEeSWE87kHCDn6g" name="next" type="_hPBvQHWEEeSWE87kHCDn6g"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_hKvsMHWEEeSWE87kHCDn6g" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_hKvsMXWEEeSWE87kHCDn6g" name="rmi">
+        <packagedElement xmi:type="uml:Package" xmi:id="_hK8ggHWEEeSWE87kHCDn6g" name="server">
+          <packagedElement xmi:type="uml:Class" xmi:id="_hPQ_0XWEEeSWE87kHCDn6g" name="UnicastRemoteObject"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_hPC9YXWEEeSWE87kHCDn6g" name="Remote"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hPDkcXWEEeSWE87kHCDn6g" name="RemoteException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hPQYwHWEEeSWE87kHCDn6g" name="Naming"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_hKwTQHWEEeSWE87kHCDn6g" name="util">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_hPELgXWEEeSWE87kHCDn6g" name="List"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hPRm4XWEEeSWE87kHCDn6g" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hPS1AHWEEeSWE87kHCDn6g" name="Collections"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hPTcEHWEEeSWE87kHCDn6g" name="Scanner"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_hK42IHWEEeSWE87kHCDn6g" name="io">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_hPLgQHWEEeSWE87kHCDn6g" name="Serializable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_hK75cXWEEeSWE87kHCDn6g" name="awt">
+        <packagedElement xmi:type="uml:Class" xmi:id="_hPPKoHWEEeSWE87kHCDn6g" name="Color"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_hAYPQHWEEeSWE87kHCDn6g">
+      <eAnnotations xmi:id="_hAY2UHWEEeSWE87kHCDn6g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_hAY2UXWEEeSWE87kHCDn6g" base_Package="_g2y1cHWEEeSWE87kHCDn6g">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hLkLkHWEEeSWE87kHCDn6g" base_Element="_hLi9cHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hLlZsHWEEeSWE87kHCDn6g" base_Element="_hLkLkXWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Array xmi:id="_hMQvIHWEEeSWE87kHCDn6g" base_Element="_hMPhAXWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hMR9QHWEEeSWE87kHCDn6g" base_Element="_hMQvIXWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Annotations xmi:id="_hMR9QXWEEeSWE87kHCDn6g" base_Element="_hMQvIXWEEeSWE87kHCDn6g">
+    <annotations xmi:id="_hMSkUHWEEeSWE87kHCDn6g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hMTycHWEEeSWE87kHCDn6g" base_Element="_hMSkUXWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Annotations xmi:id="_hMTycXWEEeSWE87kHCDn6g" base_Element="_hMSkUXWEEeSWE87kHCDn6g">
+    <annotations xmi:id="_hMTycnWEEeSWE87kHCDn6g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hMVnoHWEEeSWE87kHCDn6g" base_Element="_hMVAkHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Annotations xmi:id="_hMW1wHWEEeSWE87kHCDn6g" base_Element="_hMVAkHWEEeSWE87kHCDn6g">
+    <annotations xmi:id="_hMW1wXWEEeSWE87kHCDn6g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hMZSAXWEEeSWE87kHCDn6g" base_Element="_hMYq8HWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Annotations xmi:id="_hMZ5EHWEEeSWE87kHCDn6g" base_Element="_hMYq8HWEEeSWE87kHCDn6g">
+    <annotations xmi:id="_hMZ5EXWEEeSWE87kHCDn6g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hMbuQHWEEeSWE87kHCDn6g" base_Element="_hMagIHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Annotations xmi:id="_hMbuQXWEEeSWE87kHCDn6g" base_Element="_hMagIHWEEeSWE87kHCDn6g">
+    <annotations xmi:id="_hMcVUHWEEeSWE87kHCDn6g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hMc8YXWEEeSWE87kHCDn6g" base_Element="_hMcVUXWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Annotations xmi:id="_hMeKgHWEEeSWE87kHCDn6g" base_Element="_hMcVUXWEEeSWE87kHCDn6g">
+    <annotations xmi:id="_hMeKgXWEEeSWE87kHCDn6g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hMfYoHWEEeSWE87kHCDn6g" base_Element="_hMexkHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Annotations xmi:id="_hMgmwHWEEeSWE87kHCDn6g" base_Element="_hMexkHWEEeSWE87kHCDn6g">
+    <annotations xmi:id="_hMgmwXWEEeSWE87kHCDn6g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hMjqEHWEEeSWE87kHCDn6g" base_Element="_hMib8HWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Annotations xmi:id="_hMkRIHWEEeSWE87kHCDn6g" base_Element="_hMib8HWEEeSWE87kHCDn6g">
+    <annotations xmi:id="_hMkRIXWEEeSWE87kHCDn6g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hMlfQXWEEeSWE87kHCDn6g" base_Element="_hMk4MHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Annotations xmi:id="_hMmGUHWEEeSWE87kHCDn6g" base_Element="_hMk4MHWEEeSWE87kHCDn6g">
+    <annotations xmi:id="_hMmGUXWEEeSWE87kHCDn6g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_hPBIMHWEEeSWE87kHCDn6g" base_Element="_hPAhIHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Reference xmi:id="_hPCWUHWEEeSWE87kHCDn6g" base_Element="_hPBvQHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Reference xmi:id="_hPC9YHWEEeSWE87kHCDn6g" base_Element="_hPCWUXWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Reference xmi:id="_hPDkcHWEEeSWE87kHCDn6g" base_Element="_hPC9YXWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Reference xmi:id="_hPELgHWEEeSWE87kHCDn6g" base_Element="_hPDkcXWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Reference xmi:id="_hPEykHWEEeSWE87kHCDn6g" base_Element="_hPELgXWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Reference xmi:id="_hPMHUHWEEeSWE87kHCDn6g" base_Element="_hPLgQHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Reference xmi:id="_hPPxsHWEEeSWE87kHCDn6g" base_Element="_hPPKoHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Reference xmi:id="_hPQ_0HWEEeSWE87kHCDn6g" base_Element="_hPQYwHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Reference xmi:id="_hPRm4HWEEeSWE87kHCDn6g" base_Element="_hPQ_0XWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Reference xmi:id="_hPSN8HWEEeSWE87kHCDn6g" base_Element="_hPRm4XWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Reference xmi:id="_hPS1AXWEEeSWE87kHCDn6g" base_Element="_hPS1AHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Reference xmi:id="_hPUDIHWEEeSWE87kHCDn6g" base_Element="_hPTcEHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hPV4UXWEEeSWE87kHCDn6g" base_Element="_hPVRQHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Annotations xmi:id="_hPWfYHWEEeSWE87kHCDn6g" base_Element="_hPVRQHWEEeSWE87kHCDn6g">
+    <annotations xmi:id="_hPWfYXWEEeSWE87kHCDn6g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_hPtrwHWEEeSWE87kHCDn6g" base_Element="_hPtEsHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hPwIAHWEEeSWE87kHCDn6g" base_Element="_hPu54HWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Annotations xmi:id="_hPwIAXWEEeSWE87kHCDn6g" base_Element="_hPu54HWEEeSWE87kHCDn6g">
+    <annotations xmi:id="_hPwvEHWEEeSWE87kHCDn6g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hPykQHWEEeSWE87kHCDn6g" base_Element="_hPxWIHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Annotations xmi:id="_hPzLUHWEEeSWE87kHCDn6g" base_Element="_hPxWIHWEEeSWE87kHCDn6g">
+    <annotations xmi:id="_hPzLUXWEEeSWE87kHCDn6g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hP55AHWEEeSWE87kHCDn6g" base_Element="_hP5R8XWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hP55AnWEEeSWE87kHCDn6g" base_Element="_hP55AXWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hP7HIXWEEeSWE87kHCDn6g" base_Element="_hP6gEnWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hP7uMXWEEeSWE87kHCDn6g" base_Element="_hP7HInWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hP8VQXWEEeSWE87kHCDn6g" base_Element="_hP7uMnWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hP88UXWEEeSWE87kHCDn6g" base_Element="_hP88UHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hP9jYnWEEeSWE87kHCDn6g" base_Element="_hP9jYHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Reference xmi:id="_hQXMAHWEEeSWE87kHCDn6g" base_Element="_hQWk8HWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Reference xmi:id="_hQXzEHWEEeSWE87kHCDn6g" base_Element="_hQXMAXWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Reference xmi:id="_hQYaInWEEeSWE87kHCDn6g" base_Element="_hQYaIHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Reference xmi:id="_hQZoQHWEEeSWE87kHCDn6g" base_Element="_hQZBMHWEEeSWE87kHCDn6g"/>
+  <UMLLabProfile:Reference xmi:id="_hQaPUHWEEeSWE87kHCDn6g" base_Element="_hQZoQXWEEeSWE87kHCDn6g"/>
+</xmi:XMI>

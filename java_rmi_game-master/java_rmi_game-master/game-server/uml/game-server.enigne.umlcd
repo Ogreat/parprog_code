@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_aHJ1AHWBEeSWE87kHCDn6g">
+  <modelElement href="game-server.enigne.uml#_aaBtsHWBEeSWE87kHCDn6g"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_aj9s0HWBEeSWE87kHCDn6g" sourceAnchor="112.0,213.0" targetAnchor="172.0,0.0" target="_akUSKXWBEeSWE87kHCDn6g" source="_aj-68HWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_afGa8HWBEeSWE87kHCDn6g"/>
+    <stereotypes xmi:id="_aj9s0XWBEeSWE87kHCDn6g" name="Reference">
+      <modelElement href="game-server.enigne.uml#_afHCAHWBEeSWE87kHCDn6g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_aj9s0nWBEeSWE87kHCDn6g" text="">
+      <visualProperties xmi:id="_ar12cHWBEeSWE87kHCDn6g" position="-38.5,-8.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_aj9s03WBEeSWE87kHCDn6g" aggregationKind="NONE" name="">
+      <modelElement href="game-server.enigne.uml#_afGa8XWBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_ar1PYHWBEeSWE87kHCDn6g" position="2.5,31.799999999999955"/>
+      <visibility xmi:id="_aj9s1HWBEeSWE87kHCDn6g" label="+"/>
+      <cardinality xmi:id="_aj9s1XWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_aj9s1nWBEeSWE87kHCDn6g" aggregationKind="NONE" name="player" navigable="true">
+      <modelElement href="game-server.enigne.uml#_aeungnWBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_ar2dgHWBEeSWE87kHCDn6g" position="2.5,-76.79999999999995"/>
+      <visibility xmi:id="_aj9s13WBEeSWE87kHCDn6g" label="+"/>
+      <cardinality xmi:id="_aj9s2HWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_aj-T4HWBEeSWE87kHCDn6g" sourceAnchor="127.0,0.0" targetAnchor="127.0,99.0" target="_alEgEHWBEeSWE87kHCDn6g" source="_aj-68HWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_afHpEHWBEeSWE87kHCDn6g"/>
+    <visualProperties xmi:id="_jrn04HWBEeSWE87kHCDn6g" position="-64.0,-94.0"/>
+    <stereotypes xmi:id="_aj-T4XWBEeSWE87kHCDn6g" name="Reference">
+      <modelElement href="game-server.enigne.uml#_afIQIHWBEeSWE87kHCDn6g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_aj-T4nWBEeSWE87kHCDn6g" text="">
+      <visualProperties xmi:id="_ar3roHWBEeSWE87kHCDn6g" position="2.0,22.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_aj-T43WBEeSWE87kHCDn6g" aggregationKind="NONE" name="">
+      <modelElement href="game-server.enigne.uml#_afHpEXWBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_ar3EkHWBEeSWE87kHCDn6g" position="-17.0,-66.0"/>
+      <visibility xmi:id="_aj-T5HWBEeSWE87kHCDn6g" label="+"/>
+      <cardinality xmi:id="_aj-T5XWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_aj-T5nWBEeSWE87kHCDn6g" aggregationKind="NONE" name="walls" navigable="true">
+      <modelElement href="game-server.enigne.uml#_aevOkHWBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_ar4SsHWBEeSWE87kHCDn6g" position="2.0,20.0"/>
+      <visibility xmi:id="_aj-T53WBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_aj-T6HWBEeSWE87kHCDn6g" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_akUSIHWBEeSWE87kHCDn6g" source="_akUSKXWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_afKsYXWBEeSWE87kHCDn6g"/>
+    <stereotypes xmi:id="_akUSIXWBEeSWE87kHCDn6g" name="Reference">
+      <modelElement href="game-server.enigne.uml#_afLTcHWBEeSWE87kHCDn6g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_akUSInWBEeSWE87kHCDn6g" text=""/>
+    <sourceRole xmi:id="_akUSI3WBEeSWE87kHCDn6g" aggregationKind="NONE" name="">
+      <modelElement href="game-server.enigne.uml#_afKsYnWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akUSJHWBEeSWE87kHCDn6g" label="+"/>
+      <cardinality xmi:id="_akUSJXWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_akUSJnWBEeSWE87kHCDn6g" aggregationKind="NONE" name="color" navigable="true">
+      <modelElement href="game-server.enigne.uml#_ae5moHWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akUSJ3WBEeSWE87kHCDn6g" label="+"/>
+      <cardinality xmi:id="_akUSKHWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_akf4UHWBEeSWE87kHCDn6g" sourceAnchor="159.0,0.0" targetAnchor="103.0,128.0" target="_akcN8HWBEeSWE87kHCDn6g" source="_akxlKXWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_afIQIXWBEeSWE87kHCDn6g"/>
+    <stereotypes xmi:id="_aknNEHWBEeSWE87kHCDn6g" name="Reference">
+      <modelElement href="game-server.enigne.uml#_afI3MHWBEeSWE87kHCDn6g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_akmmAHWBEeSWE87kHCDn6g" text="">
+      <visualProperties xmi:id="_ar45wXWBEeSWE87kHCDn6g" position="-19.0,-10.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_akmmAXWBEeSWE87kHCDn6g" aggregationKind="NONE" name="">
+      <modelElement href="game-server.enigne.uml#_afIQInWBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_ar45wHWBEeSWE87kHCDn6g" position="-21.0,-50.0"/>
+      <visibility xmi:id="_akt6wXWBEeSWE87kHCDn6g" label="+"/>
+      <cardinality xmi:id="_akt6wHWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_akmmAnWBEeSWE87kHCDn6g" aggregationKind="NONE" name="callbacks" navigable="true">
+      <modelElement href="game-server.enigne.uml#_aey483WBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_ar5g0HWBEeSWE87kHCDn6g" position="7.0,5.0"/>
+      <visibility xmi:id="_akt6w3WBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_akt6wnWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_akhGcHWBEeSWE87kHCDn6g" sourceAnchor="322.0,117.0" targetAnchor="0.0,104.0" target="_aj-68HWBEeSWE87kHCDn6g" source="_akxlKXWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_afI3MXWBEeSWE87kHCDn6g"/>
+    <stereotypes xmi:id="_aknNFHWBEeSWE87kHCDn6g" name="Reference">
+      <modelElement href="game-server.enigne.uml#_afJeQHWBEeSWE87kHCDn6g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_aknNEXWBEeSWE87kHCDn6g" text="">
+      <visualProperties xmi:id="_ar6u8HWBEeSWE87kHCDn6g" position="-7.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_aknNEnWBEeSWE87kHCDn6g" aggregationKind="NONE" name="">
+      <modelElement href="game-server.enigne.uml#_afI3MnWBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_ar6H4HWBEeSWE87kHCDn6g" position="12.0,2.0"/>
+      <visibility xmi:id="_akuh0XWBEeSWE87kHCDn6g" label="+"/>
+      <cardinality xmi:id="_akuh0HWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_aknNE3WBEeSWE87kHCDn6g" aggregationKind="NONE" name="cells" navigable="true">
+      <modelElement href="game-server.enigne.uml#_aezgAnWBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_ar6u8XWBEeSWE87kHCDn6g" position="-62.0,-47.0"/>
+      <visibility xmi:id="_akuh03WBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_akuh0nWBEeSWE87kHCDn6g" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_aklX4HWBEeSWE87kHCDn6g" sourceAnchor="161.0,384.0" targetAnchor="0.0,97.0" target="_akUSKXWBEeSWE87kHCDn6g" source="_akxlKXWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_afJeQXWBEeSWE87kHCDn6g"/>
+    <bendpoints xmi:id="_rVDZgHWDEeSWE87kHCDn6g" sourceY="140" targetX="-208"/>
+    <stereotypes xmi:id="_akn0InWBEeSWE87kHCDn6g" name="Reference">
+      <modelElement href="game-server.enigne.uml#_afKFUHWBEeSWE87kHCDn6g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_aknNFXWBEeSWE87kHCDn6g" text="">
+      <visualProperties xmi:id="_ar79EHWBEeSWE87kHCDn6g" position="41.0,-18.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_akn0IHWBEeSWE87kHCDn6g" aggregationKind="NONE" name="">
+      <modelElement href="game-server.enigne.uml#_afJeQnWBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_ar7WAHWBEeSWE87kHCDn6g" position="1.0,54.0"/>
+      <visibility xmi:id="_akvI4XWBEeSWE87kHCDn6g" label="+"/>
+      <cardinality xmi:id="_akvI4HWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_akn0IXWBEeSWE87kHCDn6g" aggregationKind="NONE" name="curPlayer" navigable="true">
+      <modelElement href="game-server.enigne.uml#_ae1VMHWBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_ar8kIHWBEeSWE87kHCDn6g" position="-100.5,-47.0"/>
+      <visibility xmi:id="_akvI43WBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_akvI4nWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_akxlIHWBEeSWE87kHCDn6g" source="_akxlKXWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_afKFUXWBEeSWE87kHCDn6g"/>
+    <stereotypes xmi:id="_akxlIXWBEeSWE87kHCDn6g" name="Reference">
+      <modelElement href="game-server.enigne.uml#_afKsYHWBEeSWE87kHCDn6g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_akxlInWBEeSWE87kHCDn6g" text=""/>
+    <sourceRole xmi:id="_akxlI3WBEeSWE87kHCDn6g" aggregationKind="NONE" name="">
+      <modelElement href="game-server.enigne.uml#_afKFUnWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akxlJHWBEeSWE87kHCDn6g" label="+"/>
+      <cardinality xmi:id="_akxlJXWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_akxlJnWBEeSWE87kHCDn6g" aggregationKind="NONE" name="playerQueue" navigable="true">
+      <modelElement href="game-server.enigne.uml#_ae18QHWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akxlJ3WBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_akxlKHWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_kEMs8HWBEeSWE87kHCDn6g" sourceAnchor="293.0,0.0" targetAnchor="39.0,61.0" dashed="true" superClass="_kEPwQHWBEeSWE87kHCDn6g" subClass="_aj-68HWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_aejBUHWBEeSWE87kHCDn6g"/>
+    <visualProperties xmi:id="_q88GYHWBEeSWE87kHCDn6g" position="452.0,-376.0"/>
+    <bendpoints xmi:id="_TRYakHWCEeSWE87kHCDn6g" sourceY="-210" targetX="-24" targetY="36"/>
+    <bendpoints xmi:id="_TRYakXWCEeSWE87kHCDn6g" sourceX="24" sourceY="-210" targetY="36"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_kEMs8XWBEeSWE87kHCDn6g" sourceAnchor="129.0,0.0" targetAnchor="39.0,61.0" dashed="true" superClass="_kEPwQHWBEeSWE87kHCDn6g" subClass="_alEgEHWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_aek2gHWBEeSWE87kHCDn6g"/>
+    <visualProperties xmi:id="_kEPwRHWBEeSWE87kHCDn6g" position="-64.0,-94.0"/>
+    <bendpoints xmi:id="_TRWlYHWCEeSWE87kHCDn6g" sourceY="-52" targetX="-192" targetY="36"/>
+    <bendpoints xmi:id="_TRWlYXWCEeSWE87kHCDn6g" sourceX="192" sourceY="-52" targetY="36"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_kEMs8nWBEeSWE87kHCDn6g" sourceAnchor="322.0,192.0" targetAnchor="39.0,61.0" dashed="true" superClass="_kEPwQHWBEeSWE87kHCDn6g" subClass="_akxlKXWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_aemEoHWBEeSWE87kHCDn6g"/>
+    <visualProperties xmi:id="_q88GYXWBEeSWE87kHCDn6g" position="452.0,-376.0"/>
+    <bendpoints xmi:id="_TRbd4HWCEeSWE87kHCDn6g" sourceX="120" targetX="391" targetY="699"/>
+    <bendpoints xmi:id="_TRbd4XWCEeSWE87kHCDn6g" sourceX="120" sourceY="-663" targetX="391" targetY="36"/>
+    <bendpoints xmi:id="_TRbd4nWCEeSWE87kHCDn6g" sourceX="-271" sourceY="-663" targetY="36"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_kENUAHWBEeSWE87kHCDn6g" sourceAnchor="199.0,0.0" targetAnchor="39.0,61.0" dashed="true" superClass="_kEPwQHWBEeSWE87kHCDn6g" subClass="_akUSKXWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_aen50HWBEeSWE87kHCDn6g"/>
+    <visualProperties xmi:id="_q88tcHWBEeSWE87kHCDn6g" position="452.0,-376.0"/>
+    <bendpoints xmi:id="_TRcE8HWCEeSWE87kHCDn6g" sourceY="-221" targetX="230" targetY="36"/>
+    <bendpoints xmi:id="_TRcE8XWCEeSWE87kHCDn6g" sourceX="-230" sourceY="-221" targetY="36"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_kENUAXWBEeSWE87kHCDn6g" sourceAnchor="102.0,0.0" targetAnchor="39.0,61.0" superClass="_kEPwQHWBEeSWE87kHCDn6g" subClass="_akIr8HWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_aerkMXWBEeSWE87kHCDn6g"/>
+    <visualProperties xmi:id="_q87fUHWBEeSWE87kHCDn6g" position="452.0,-376.0"/>
+    <bendpoints xmi:id="_TRZBoHWCEeSWE87kHCDn6g" sourceY="-30" targetX="112" targetY="36"/>
+    <bendpoints xmi:id="_TRZBoXWCEeSWE87kHCDn6g" sourceX="-112" sourceY="-30" targetY="36"/>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_akG2wHWBEeSWE87kHCDn6g" name="Exception">
+    <modelElement href="game-server.enigne.uml#_aejoYXWBEeSWE87kHCDn6g"/>
+    <visualProperties xmi:id="_akG2wXWBEeSWE87kHCDn6g" position="934.0,130.0" size="-1.0,-1.0" visible="false"/>
+    <stereotypes xmi:id="_akG2wnWBEeSWE87kHCDn6g" name="Reference">
+      <modelElement href="game-server.enigne.uml#_aekPcHWBEeSWE87kHCDn6g"/>
+    </stereotypes>
+    <visibility xmi:id="_akG2w3WBEeSWE87kHCDn6g" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_akxlKXWBEeSWE87kHCDn6g" name="GameBoard" associationsOut="_akf4UHWBEeSWE87kHCDn6g _akhGcHWBEeSWE87kHCDn6g _aklX4HWBEeSWE87kHCDn6g _akxlIHWBEeSWE87kHCDn6g" generalizations="_kEMs8nWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_aapYwHWBEeSWE87kHCDn6g"/>
+    <visualProperties xmi:id="_akxlKnWBEeSWE87kHCDn6g" position="17.0,344.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_akxlK3WBEeSWE87kHCDn6g" label="+"/>
+    <attributes xmi:id="_akxlLHWBEeSWE87kHCDn6g" defaultValue="925613405409691468L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="game-server.enigne.uml#_aeyR4HWBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_ETs6UHWCEeSWE87kHCDn6g" visible="false"/>
+      <visibility xmi:id="_akxlLXWBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_akxlLnWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_akxlL3WBEeSWE87kHCDn6g" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_akxlMHWBEeSWE87kHCDn6g" defaultValue="null" name="callbacks">
+      <modelElement href="game-server.enigne.uml#_aey483WBEeSWE87kHCDn6g"/>
+      <stereotypes xmi:id="_akxlMXWBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_aezgAXWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_akt6xHWBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_aezgAXWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <visibility xmi:id="_akxlMnWBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_akxlM3WBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_akxlNHWBEeSWE87kHCDn6g" name="BoardCallbacks">
+        <modelElement href="game-server.enigne.uml#_aa_XAHWBEeSWE87kHCDn6g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_akxlNXWBEeSWE87kHCDn6g" name="cells">
+      <modelElement href="game-server.enigne.uml#_aezgAnWBEeSWE87kHCDn6g"/>
+      <stereotypes xmi:id="_akxlNnWBEeSWE87kHCDn6g" name="Array">
+        <modelElement href="game-server.enigne.uml#_ae0HEXWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_akxlN3WBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_ae0HEnWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_akuh1HWBEeSWE87kHCDn6g" name="Array">
+        <modelElement href="game-server.enigne.uml#_ae0HEXWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_akuh1XWBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_ae0HEnWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <visibility xmi:id="_akxlOHWBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_akxlOXWBEeSWE87kHCDn6g" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_akxlOnWBEeSWE87kHCDn6g" name="BoardCell">
+        <modelElement href="game-server.enigne.uml#_aackcHWBEeSWE87kHCDn6g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_akxlO3WBEeSWE87kHCDn6g" name="width">
+      <modelElement href="game-server.enigne.uml#_ae0uIHWBEeSWE87kHCDn6g"/>
+      <stereotypes xmi:id="_akxlPHWBEeSWE87kHCDn6g" name="MultiDeclaration">
+        <modelElement href="game-server.enigne.uml#_ae0uIXWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_akxlPXWBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_ae0uInWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <visibility xmi:id="_akxlPnWBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_akxlP3WBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_akxlQHWBEeSWE87kHCDn6g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_akxlQXWBEeSWE87kHCDn6g" name="curPlayer">
+      <modelElement href="game-server.enigne.uml#_ae1VMHWBEeSWE87kHCDn6g"/>
+      <stereotypes xmi:id="_akxlQnWBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_ae1VMXWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_akvI5HWBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_ae1VMXWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <visibility xmi:id="_akxlQ3WBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_akxlRHWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_akxlRXWBEeSWE87kHCDn6g" name="Player">
+        <modelElement href="game-server.enigne.uml#_aa20IHWBEeSWE87kHCDn6g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_akxlRnWBEeSWE87kHCDn6g" name="playerQueue">
+      <modelElement href="game-server.enigne.uml#_ae18QHWBEeSWE87kHCDn6g"/>
+      <stereotypes xmi:id="_akxlR3WBEeSWE87kHCDn6g" name="Generics">
+        <modelElement href="game-server.enigne.uml#_ae2jUHWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_akxlSHWBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_ae2jUXWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_akxlSXWBEeSWE87kHCDn6g" name="Generics">
+        <modelElement href="game-server.enigne.uml#_ae2jUHWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_akxlSnWBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_ae2jUXWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <visibility xmi:id="_akxlS3WBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_akxlTHWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_akyMMHWBEeSWE87kHCDn6g" name="Queue">
+        <modelElement href="game-server.enigne.uml#_aeTJsXWBEeSWE87kHCDn6g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_akyMMXWBEeSWE87kHCDn6g" name="height">
+      <modelElement href="game-server.enigne.uml#_afCwkHWBEeSWE87kHCDn6g"/>
+      <stereotypes xmi:id="_akyMMnWBEeSWE87kHCDn6g" name="MultiDeclaration">
+        <modelElement href="game-server.enigne.uml#_afCwkXWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_akyMM3WBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_afDXoHWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <visibility xmi:id="_akyMNHWBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_akyMNXWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_akyMNnWBEeSWE87kHCDn6g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_akyMN3WBEeSWE87kHCDn6g" name="getWidht">
+      <modelElement href="game-server.enigne.uml#_aarN8HWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akyMOHWBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_akyMOXWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aar1AHWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMOnWBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_akyMO3WBEeSWE87kHCDn6g" name="getHeight">
+      <modelElement href="game-server.enigne.uml#_aar1AXWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akyMPHWBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_akyMPXWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aar1AnWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMPnWBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_akyMP3WBEeSWE87kHCDn6g" name="GameBoard">
+      <modelElement href="game-server.enigne.uml#_aascEHWBEeSWE87kHCDn6g"/>
+      <keywords xmi:id="_akyMQHWBEeSWE87kHCDn6g" keyword="create"/>
+      <visibility xmi:id="_akyMQXWBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_akyMQnWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aatDIXWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMQ3WBEeSWE87kHCDn6g" name="GameBoard">
+          <modelElement href="game-server.enigne.uml#_aapYwHWBEeSWE87kHCDn6g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_akyMRHWBEeSWE87kHCDn6g" name="wCells">
+        <modelElement href="game-server.enigne.uml#_aascEXWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMRXWBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_akyMRnWBEeSWE87kHCDn6g" name="hCells">
+        <modelElement href="game-server.enigne.uml#_aascEnWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMR3WBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_akyMSHWBEeSWE87kHCDn6g" name="startGame">
+      <modelElement href="game-server.enigne.uml#_aatDInWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akyMSXWBEeSWE87kHCDn6g" label="+"/>
+    </operations>
+    <operations xmi:id="_akyMSnWBEeSWE87kHCDn6g" name="getCellPlayer">
+      <modelElement href="game-server.enigne.uml#_aatqMHWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akyMS3WBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_akyMTHWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aeU-4nWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMTXWBEeSWE87kHCDn6g" name="Player">
+          <modelElement href="game-server.enigne.uml#_aa20IHWBEeSWE87kHCDn6g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_akyMTnWBEeSWE87kHCDn6g" name="i">
+        <modelElement href="game-server.enigne.uml#_aatqMXWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMT3WBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_akyMUHWBEeSWE87kHCDn6g" name="j">
+        <modelElement href="game-server.enigne.uml#_aatqMnWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMUXWBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_akyMUnWBEeSWE87kHCDn6g" name="getCellInfo">
+      <modelElement href="game-server.enigne.uml#_aau4UHWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akyMU3WBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_akyMVHWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aau4U3WBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMVXWBEeSWE87kHCDn6g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_akyMVnWBEeSWE87kHCDn6g" name="i">
+        <modelElement href="game-server.enigne.uml#_aau4UXWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMV3WBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_akyMWHWBEeSWE87kHCDn6g" name="j">
+        <modelElement href="game-server.enigne.uml#_aau4UnWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMWXWBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_akyMWnWBEeSWE87kHCDn6g" name="getCellPlayerInfo">
+      <modelElement href="game-server.enigne.uml#_aavfYHWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akyMW3WBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_akyMXHWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aawGcHWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMXXWBEeSWE87kHCDn6g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_akyMXnWBEeSWE87kHCDn6g" name="i">
+        <modelElement href="game-server.enigne.uml#_aavfYXWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMX3WBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_akyMYHWBEeSWE87kHCDn6g" name="j">
+        <modelElement href="game-server.enigne.uml#_aavfYnWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMYXWBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_akyMYnWBEeSWE87kHCDn6g" name="getCurrentPlayer">
+      <modelElement href="game-server.enigne.uml#_aawGcXWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akyMY3WBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_akyMZHWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aeWNAHWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMZXWBEeSWE87kHCDn6g" name="Player">
+          <modelElement href="game-server.enigne.uml#_aa20IHWBEeSWE87kHCDn6g"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_akyMZnWBEeSWE87kHCDn6g" name="checkBoard">
+      <modelElement href="game-server.enigne.uml#_aawtgHWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akyMZ3WBEeSWE87kHCDn6g" label="-"/>
+    </operations>
+    <operations xmi:id="_akyMaHWBEeSWE87kHCDn6g" name="isEnd">
+      <modelElement href="game-server.enigne.uml#_aawtgXWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akyMaXWBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_akyManWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aaxUkHWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMa3WBEeSWE87kHCDn6g" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_akyMbHWBEeSWE87kHCDn6g" name="nextPlayer">
+      <modelElement href="game-server.enigne.uml#_aaxUkXWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akyMbXWBEeSWE87kHCDn6g" label="-"/>
+    </operations>
+    <operations xmi:id="_akyMbnWBEeSWE87kHCDn6g" name="addCallbackListener">
+      <modelElement href="game-server.enigne.uml#_aeTwwXWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akyMb3WBEeSWE87kHCDn6g" label="+"/>
+      <parameters xmi:id="_akyMcHWBEeSWE87kHCDn6g" name="listener">
+        <modelElement href="game-server.enigne.uml#_aeUX0HWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMcXWBEeSWE87kHCDn6g" name="BoardCallbacks">
+          <modelElement href="game-server.enigne.uml#_aa_XAHWBEeSWE87kHCDn6g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_akyMcnWBEeSWE87kHCDn6g" name="newPlayer">
+      <modelElement href="game-server.enigne.uml#_aeU-4HWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akyMc3WBEeSWE87kHCDn6g" label="+"/>
+      <parameters xmi:id="_akyMdHWBEeSWE87kHCDn6g" name="p">
+        <modelElement href="game-server.enigne.uml#_aeU-4XWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMdXWBEeSWE87kHCDn6g" name="Player">
+          <modelElement href="game-server.enigne.uml#_aa20IHWBEeSWE87kHCDn6g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_akyMdnWBEeSWE87kHCDn6g" name="getCellWall">
+      <modelElement href="game-server.enigne.uml#_aeU-43WBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akyMd3WBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_akyMeHWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aeVl83WBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMeXWBEeSWE87kHCDn6g" name="BoardWall">
+          <modelElement href="game-server.enigne.uml#_aamVcHWBEeSWE87kHCDn6g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_akyMenWBEeSWE87kHCDn6g" name="i">
+        <modelElement href="game-server.enigne.uml#_aeVl8HWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMe3WBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_akyMfHWBEeSWE87kHCDn6g" name="j">
+        <modelElement href="game-server.enigne.uml#_aeVl8XWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMfXWBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_akyMfnWBEeSWE87kHCDn6g" name="side">
+        <modelElement href="game-server.enigne.uml#_aeVl8nWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMf3WBEeSWE87kHCDn6g" name="Side">
+          <modelElement href="game-server.enigne.uml#_aa9h0HWBEeSWE87kHCDn6g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_akyMgHWBEeSWE87kHCDn6g" name="cellClick">
+      <modelElement href="game-server.enigne.uml#_aeWNAXWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akyMgXWBEeSWE87kHCDn6g" label="+"/>
+      <parameters xmi:id="_akyMgnWBEeSWE87kHCDn6g" name="i">
+        <modelElement href="game-server.enigne.uml#_aeWNAnWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMg3WBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_akyMhHWBEeSWE87kHCDn6g" name="j">
+        <modelElement href="game-server.enigne.uml#_aeWNA3WBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMhXWBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_akyMhnWBEeSWE87kHCDn6g" name="side">
+        <modelElement href="game-server.enigne.uml#_aeWNBHWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akyMh3WBEeSWE87kHCDn6g" name="Side">
+          <modelElement href="game-server.enigne.uml#_aa9h0HWBEeSWE87kHCDn6g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_kEPwQHWBEeSWE87kHCDn6g" name="Serializable" subclassedBy="_kEMs8HWBEeSWE87kHCDn6g _kEMs8XWBEeSWE87kHCDn6g _kEMs8nWBEeSWE87kHCDn6g _kENUAHWBEeSWE87kHCDn6g _kENUAXWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_aeMcAHWBEeSWE87kHCDn6g"/>
+    <visualProperties xmi:id="_kEPwQXWBEeSWE87kHCDn6g" position="122.0,-422.0" size="-1.0,-1.0" visible="false"/>
+    <stereotypes xmi:id="_kEPwQnWBEeSWE87kHCDn6g" name="Reference">
+      <modelElement href="game-server.enigne.uml#_aeNDEHWBEeSWE87kHCDn6g"/>
+    </stereotypes>
+    <visibility xmi:id="_kEPwQ3WBEeSWE87kHCDn6g" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_akcN8HWBEeSWE87kHCDn6g" name="BoardCallbacks" associationsIn="_akf4UHWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_aa_XAHWBEeSWE87kHCDn6g"/>
+    <visualProperties xmi:id="_akcN8XWBEeSWE87kHCDn6g" position="73.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_akcN8nWBEeSWE87kHCDn6g" label="+"/>
+    <operations xmi:id="_akcN83WBEeSWE87kHCDn6g" name="boardChanege">
+      <modelElement href="game-server.enigne.uml#_aa_-EHWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akcN9HWBEeSWE87kHCDn6g" label="+"/>
+    </operations>
+    <operations xmi:id="_akcN9XWBEeSWE87kHCDn6g" name="gameOver">
+      <modelElement href="game-server.enigne.uml#_aefW8XWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akcN9nWBEeSWE87kHCDn6g" label="+"/>
+      <parameters xmi:id="_akcN93WBEeSWE87kHCDn6g" name="winner">
+        <modelElement href="game-server.enigne.uml#_aefW8nWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akcN-HWBEeSWE87kHCDn6g" name="Player">
+          <modelElement href="game-server.enigne.uml#_aa20IHWBEeSWE87kHCDn6g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_akcN-XWBEeSWE87kHCDn6g" name="nextPlayer">
+      <modelElement href="game-server.enigne.uml#_aef-AHWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akcN-nWBEeSWE87kHCDn6g" label="+"/>
+      <parameters xmi:id="_akcN-3WBEeSWE87kHCDn6g" name="next">
+        <modelElement href="game-server.enigne.uml#_aef-AXWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akcN_HWBEeSWE87kHCDn6g" name="Player">
+          <modelElement href="game-server.enigne.uml#_aa20IHWBEeSWE87kHCDn6g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_akcN_XWBEeSWE87kHCDn6g" name="updateScore">
+      <modelElement href="game-server.enigne.uml#_aef-AnWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akcN_nWBEeSWE87kHCDn6g" label="+"/>
+      <parameters xmi:id="_akcN_3WBEeSWE87kHCDn6g" name="player">
+        <modelElement href="game-server.enigne.uml#_aef-A3WBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akcOAHWBEeSWE87kHCDn6g" name="Player">
+          <modelElement href="game-server.enigne.uml#_aa20IHWBEeSWE87kHCDn6g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_aj-68HWBEeSWE87kHCDn6g" name="BoardCell" associationsIn="_akhGcHWBEeSWE87kHCDn6g" associationsOut="_aj9s0HWBEeSWE87kHCDn6g _aj-T4HWBEeSWE87kHCDn6g" generalizations="_kEMs8HWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_aackcHWBEeSWE87kHCDn6g"/>
+    <visualProperties xmi:id="_aj-68XWBEeSWE87kHCDn6g" position="446.0,357.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_aj-68nWBEeSWE87kHCDn6g" label="+"/>
+    <attributes xmi:id="_aj-683WBEeSWE87kHCDn6g" defaultValue="-4316623430695585413L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="game-server.enigne.uml#_aetZYHWBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_yNuMYHWBEeSWE87kHCDn6g" visible="false"/>
+      <visibility xmi:id="_aj-69HWBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_aj-69XWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_aj-69nWBEeSWE87kHCDn6g" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_aj-693WBEeSWE87kHCDn6g" name="xIndex">
+      <modelElement href="game-server.enigne.uml#_aeuAcHWBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_zDWM0HWBEeSWE87kHCDn6g"/>
+      <stereotypes xmi:id="_aj-6-HWBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_aeuAcXWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <visibility xmi:id="_aj-6-XWBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_aj-6-nWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_aj-6-3WBEeSWE87kHCDn6g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_aj-6_HWBEeSWE87kHCDn6g" name="yIndex">
+      <modelElement href="game-server.enigne.uml#_aeungHWBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_0cvBoHWBEeSWE87kHCDn6g"/>
+      <stereotypes xmi:id="_aj-6_XWBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_aeungXWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <visibility xmi:id="_aj-6_nWBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_aj-6_3WBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_aj-7AHWBEeSWE87kHCDn6g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_aj-7AXWBEeSWE87kHCDn6g" name="player">
+      <modelElement href="game-server.enigne.uml#_aeungnWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_aj-7AnWBEeSWE87kHCDn6g" label="+"/>
+      <cardinality xmi:id="_aj-7A3WBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_aj-7BHWBEeSWE87kHCDn6g" name="Player">
+        <modelElement href="game-server.enigne.uml#_aa20IHWBEeSWE87kHCDn6g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_aj-7BXWBEeSWE87kHCDn6g" defaultValue="new BoardWall[4]" name="walls">
+      <modelElement href="game-server.enigne.uml#_aevOkHWBEeSWE87kHCDn6g"/>
+      <stereotypes xmi:id="_aj-7BnWBEeSWE87kHCDn6g" name="Array">
+        <modelElement href="game-server.enigne.uml#_aevOknWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_aj-7B3WBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_aev1oXWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_aj-7CHWBEeSWE87kHCDn6g" name="Array">
+        <modelElement href="game-server.enigne.uml#_aevOknWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_aj-7CXWBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_aev1oXWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <visibility xmi:id="_aj-7CnWBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_aj-7C3WBEeSWE87kHCDn6g" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_aj-7DHWBEeSWE87kHCDn6g" name="BoardWall">
+        <modelElement href="game-server.enigne.uml#_aamVcHWBEeSWE87kHCDn6g"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_aj-7DXWBEeSWE87kHCDn6g" name="BoardCell">
+      <modelElement href="game-server.enigne.uml#_aafnwHWBEeSWE87kHCDn6g"/>
+      <keywords xmi:id="_aj-7DnWBEeSWE87kHCDn6g" keyword="create"/>
+      <visibility xmi:id="_aj-7D3WBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_aj-7EHWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aagO0HWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_aj-7EXWBEeSWE87kHCDn6g" name="BoardCell">
+          <modelElement href="game-server.enigne.uml#_aackcHWBEeSWE87kHCDn6g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_aj-7EnWBEeSWE87kHCDn6g" name="xIndex">
+        <modelElement href="game-server.enigne.uml#_aafnwXWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_aj-7E3WBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_aj-7FHWBEeSWE87kHCDn6g" name="yIndex">
+        <modelElement href="game-server.enigne.uml#_aafnwnWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_aj-7FXWBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_aj-7FnWBEeSWE87kHCDn6g" name="checkWalls">
+      <modelElement href="game-server.enigne.uml#_aag14HWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_aj-7F3WBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_aj-7GHWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aag14XWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_aj-7GXWBEeSWE87kHCDn6g" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_aj-7GnWBEeSWE87kHCDn6g" name="getXYIndex">
+      <modelElement href="game-server.enigne.uml#_aag14nWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_aj-7G3WBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_aj-7HHWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aahc8HWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_aj-7HXWBEeSWE87kHCDn6g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_aj-7HnWBEeSWE87kHCDn6g" name="checkStates">
+      <modelElement href="game-server.enigne.uml#_aahc8XWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_aj-7H3WBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_aj-7IHWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aaiEAHWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_aj-7IXWBEeSWE87kHCDn6g" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_aj-7InWBEeSWE87kHCDn6g" name="index" staticOperation="true">
+      <modelElement href="game-server.enigne.uml#_aeNqIHWBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_zxoPIHWBEeSWE87kHCDn6g" visible="false"/>
+      <visibility xmi:id="_aj-7I3WBEeSWE87kHCDn6g" label="-"/>
+      <outParameters xmi:id="_aj-7JHWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aeNqInWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_aj-7JXWBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_aj-7JnWBEeSWE87kHCDn6g" name="side">
+        <modelElement href="game-server.enigne.uml#_aeNqIXWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_aj-7J3WBEeSWE87kHCDn6g" name="Side">
+          <modelElement href="game-server.enigne.uml#_aa9h0HWBEeSWE87kHCDn6g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_aj-7KHWBEeSWE87kHCDn6g" name="createWall">
+      <modelElement href="game-server.enigne.uml#_aeORMHWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_aj-7KXWBEeSWE87kHCDn6g" label="+"/>
+      <parameters xmi:id="_aj-7KnWBEeSWE87kHCDn6g" name="wall">
+        <modelElement href="game-server.enigne.uml#_aeORMXWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_aj-7K3WBEeSWE87kHCDn6g" name="BoardWall">
+          <modelElement href="game-server.enigne.uml#_aamVcHWBEeSWE87kHCDn6g"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_aj-7LHWBEeSWE87kHCDn6g" name="side">
+        <modelElement href="game-server.enigne.uml#_aeORMnWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_aj-7LXWBEeSWE87kHCDn6g" name="Side">
+          <modelElement href="game-server.enigne.uml#_aa9h0HWBEeSWE87kHCDn6g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_aj-7LnWBEeSWE87kHCDn6g" name="getWall">
+      <modelElement href="game-server.enigne.uml#_aeO4QHWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_aj-7L3WBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_aj-7MHWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aePfUHWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_aj-7MXWBEeSWE87kHCDn6g" name="BoardWall">
+          <modelElement href="game-server.enigne.uml#_aamVcHWBEeSWE87kHCDn6g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_aj-7MnWBEeSWE87kHCDn6g" name="side">
+        <modelElement href="game-server.enigne.uml#_aeO4QXWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_aj-7M3WBEeSWE87kHCDn6g" name="Side">
+          <modelElement href="game-server.enigne.uml#_aa9h0HWBEeSWE87kHCDn6g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_aj-7NHWBEeSWE87kHCDn6g" name="setPlayer">
+      <modelElement href="game-server.enigne.uml#_aePfUXWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_aj-7NXWBEeSWE87kHCDn6g" label="+"/>
+      <parameters xmi:id="_aj-7NnWBEeSWE87kHCDn6g" name="player">
+        <modelElement href="game-server.enigne.uml#_aePfUnWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_aj-7N3WBEeSWE87kHCDn6g" name="Player">
+          <modelElement href="game-server.enigne.uml#_aa20IHWBEeSWE87kHCDn6g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_alEgEHWBEeSWE87kHCDn6g" name="BoardWall" associationsIn="_aj-T4HWBEeSWE87kHCDn6g" generalizations="_kEMs8XWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_aamVcHWBEeSWE87kHCDn6g"/>
+    <visualProperties xmi:id="_alEgEXWBEeSWE87kHCDn6g" position="446.0,153.0" size="257.0,99.0"/>
+    <visibility xmi:id="_alEgEnWBEeSWE87kHCDn6g" label="+"/>
+    <attributes xmi:id="_alEgE3WBEeSWE87kHCDn6g" defaultValue="7191170178194742899L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="game-server.enigne.uml#_aewcsHWBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_iSv9cHWBEeSWE87kHCDn6g" visible="false"/>
+      <visibility xmi:id="_alEgFHWBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_alEgFXWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_alEgFnWBEeSWE87kHCDn6g" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_alEgF3WBEeSWE87kHCDn6g" defaultValue="false" name="state">
+      <modelElement href="game-server.enigne.uml#_aewcsnWBEeSWE87kHCDn6g"/>
+      <stereotypes xmi:id="_alEgGHWBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_aexDwHWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <visibility xmi:id="_alEgGXWBEeSWE87kHCDn6g" label="+"/>
+      <cardinality xmi:id="_alEgGnWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_alEgG3WBEeSWE87kHCDn6g" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_alEgHHWBEeSWE87kHCDn6g" name="BoardWall">
+      <modelElement href="game-server.enigne.uml#_aam8gHWBEeSWE87kHCDn6g"/>
+      <keywords xmi:id="_alEgHXWBEeSWE87kHCDn6g" keyword="create"/>
+      <stereotypes xmi:id="_alEgHnWBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_aanjkHWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <visibility xmi:id="_alEgH3WBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_alEgIHWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aanjkXWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_alEgIXWBEeSWE87kHCDn6g" name="BoardWall">
+          <modelElement href="game-server.enigne.uml#_aamVcHWBEeSWE87kHCDn6g"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_alEgInWBEeSWE87kHCDn6g" name="BoardWall">
+      <modelElement href="game-server.enigne.uml#_aanjknWBEeSWE87kHCDn6g"/>
+      <keywords xmi:id="_alEgI3WBEeSWE87kHCDn6g" keyword="create"/>
+      <visibility xmi:id="_alEgJHWBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_alEgJXWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aaoKo3WBEeSWE87kHCDn6g"/>
+        <type xmi:id="_alEgJnWBEeSWE87kHCDn6g" name="BoardWall">
+          <modelElement href="game-server.enigne.uml#_aamVcHWBEeSWE87kHCDn6g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_alEgJ3WBEeSWE87kHCDn6g" name="state">
+        <modelElement href="game-server.enigne.uml#_aaoKoHWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_alEgKHWBEeSWE87kHCDn6g" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_akUSKXWBEeSWE87kHCDn6g" name="Player" associationsIn="_aj9s0HWBEeSWE87kHCDn6g _aklX4HWBEeSWE87kHCDn6g" associationsOut="_akUSIHWBEeSWE87kHCDn6g" generalizations="_kENUAHWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_aa20IHWBEeSWE87kHCDn6g"/>
+    <visualProperties xmi:id="_akUSKnWBEeSWE87kHCDn6g" position="386.0,771.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_akUSK3WBEeSWE87kHCDn6g" label="+"/>
+    <attributes xmi:id="_akUSLHWBEeSWE87kHCDn6g" defaultValue="797114087962339063L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="game-server.enigne.uml#_ae3KYHWBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_faFHMHWBEeSWE87kHCDn6g" visible="false"/>
+      <visibility xmi:id="_akUSLXWBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_akUSLnWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_akUSL3WBEeSWE87kHCDn6g" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_akUSMHWBEeSWE87kHCDn6g" defaultValue="0" name="playerCount" staticAttribute="true">
+      <modelElement href="game-server.enigne.uml#_ae3xcHWBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_fyY5gHWBEeSWE87kHCDn6g" visible="false"/>
+      <stereotypes xmi:id="_akUSMXWBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_ae3xcnWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <visibility xmi:id="_akUSMnWBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_akUSM3WBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_akUSNHWBEeSWE87kHCDn6g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_akUSNXWBEeSWE87kHCDn6g" name="id">
+      <modelElement href="game-server.enigne.uml#_ae4YgHWBEeSWE87kHCDn6g"/>
+      <visualProperties xmi:id="_htcQ8HWBEeSWE87kHCDn6g" visible="false"/>
+      <stereotypes xmi:id="_akUSNnWBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_ae4_kHWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <visibility xmi:id="_akUSN3WBEeSWE87kHCDn6g" label="-"/>
+      <cardinality xmi:id="_akUSOHWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_akUSOXWBEeSWE87kHCDn6g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_akUSOnWBEeSWE87kHCDn6g" name="name">
+      <modelElement href="game-server.enigne.uml#_ae4_kXWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akUSO3WBEeSWE87kHCDn6g" label="+"/>
+      <cardinality xmi:id="_akUSPHWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_akUSPXWBEeSWE87kHCDn6g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_akUSPnWBEeSWE87kHCDn6g" name="figure">
+      <modelElement href="game-server.enigne.uml#_ae4_knWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akUSP3WBEeSWE87kHCDn6g" label="+"/>
+      <cardinality xmi:id="_akUSQHWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_akUSQXWBEeSWE87kHCDn6g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_akUSQnWBEeSWE87kHCDn6g" name="color">
+      <modelElement href="game-server.enigne.uml#_ae5moHWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akUSQ3WBEeSWE87kHCDn6g" label="+"/>
+      <cardinality xmi:id="_akUSRHWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_akUSRXWBEeSWE87kHCDn6g" name="Color">
+        <modelElement href="game-server.enigne.uml#_aeYCMHWBEeSWE87kHCDn6g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_akUSRnWBEeSWE87kHCDn6g" defaultValue="0" name="score">
+      <modelElement href="game-server.enigne.uml#_ae5moXWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akUSR3WBEeSWE87kHCDn6g" label="+"/>
+      <cardinality xmi:id="_akUSSHWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_akUSSXWBEeSWE87kHCDn6g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_akUSSnWBEeSWE87kHCDn6g" name="addScore">
+      <modelElement href="game-server.enigne.uml#_aa4pUHWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akUSS3WBEeSWE87kHCDn6g" label="+"/>
+      <parameters xmi:id="_akUSTHWBEeSWE87kHCDn6g" name="points">
+        <modelElement href="game-server.enigne.uml#_aa4pUXWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akUSTXWBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_akUSTnWBEeSWE87kHCDn6g" name="clearScore">
+      <modelElement href="game-server.enigne.uml#_aa4pUnWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akUST3WBEeSWE87kHCDn6g" label="+"/>
+    </operations>
+    <operations xmi:id="_akUSUHWBEeSWE87kHCDn6g" name="getID">
+      <modelElement href="game-server.enigne.uml#_aa5QYHWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akUSUXWBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_akUSUnWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aa5QYXWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akUSU3WBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_akUSVHWBEeSWE87kHCDn6g" name="Player">
+      <modelElement href="game-server.enigne.uml#_aepH8HWBEeSWE87kHCDn6g"/>
+      <keywords xmi:id="_akUSVXWBEeSWE87kHCDn6g" keyword="create"/>
+      <visibility xmi:id="_akUSVnWBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_akUSV3WBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aepvAXWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akUSWHWBEeSWE87kHCDn6g" name="Player">
+          <modelElement href="game-server.enigne.uml#_aa20IHWBEeSWE87kHCDn6g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_akUSWXWBEeSWE87kHCDn6g" name="name">
+        <modelElement href="game-server.enigne.uml#_aepH8XWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akUSWnWBEeSWE87kHCDn6g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_akU5MHWBEeSWE87kHCDn6g" name="figure">
+        <modelElement href="game-server.enigne.uml#_aepH8nWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akU5MXWBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_akU5MnWBEeSWE87kHCDn6g" name="color">
+        <modelElement href="game-server.enigne.uml#_aepH83WBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akU5M3WBEeSWE87kHCDn6g" name="Color">
+          <modelElement href="game-server.enigne.uml#_aeYCMHWBEeSWE87kHCDn6g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_akIr8HWBEeSWE87kHCDn6g" name="Side" generalizations="_kENUAXWBEeSWE87kHCDn6g">
+    <modelElement href="game-server.enigne.uml#_aa9h0HWBEeSWE87kHCDn6g"/>
+    <visualProperties xmi:id="_akIr8XWBEeSWE87kHCDn6g" position="25.0,987.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_akIr8nWBEeSWE87kHCDn6g" label="+"/>
+    <operations xmi:id="_akIr83WBEeSWE87kHCDn6g" name="toString" staticOperation="true">
+      <modelElement href="game-server.enigne.uml#_aedhwHWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_akIr9HWBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_akIr9XWBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aedhwnWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akIr9nWBEeSWE87kHCDn6g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_akIr93WBEeSWE87kHCDn6g" name="side">
+        <modelElement href="game-server.enigne.uml#_aedhwXWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akIr-HWBEeSWE87kHCDn6g" name="Side">
+          <modelElement href="game-server.enigne.uml#_aa9h0HWBEeSWE87kHCDn6g"/>
+        </type>
+      </parameters>
+    </operations>
+    <literals xmi:id="_akIr-XWBEeSWE87kHCDn6g" name="top">
+      <modelElement href="game-server.enigne.uml#_aa-I4HWBEeSWE87kHCDn6g"/>
+    </literals>
+    <literals xmi:id="_akIr-nWBEeSWE87kHCDn6g" name="bottom">
+      <modelElement href="game-server.enigne.uml#_aa-I4XWBEeSWE87kHCDn6g"/>
+    </literals>
+    <literals xmi:id="_akIr-3WBEeSWE87kHCDn6g" name="right">
+      <modelElement href="game-server.enigne.uml#_aa-I4nWBEeSWE87kHCDn6g"/>
+    </literals>
+    <literals xmi:id="_akIr_HWBEeSWE87kHCDn6g" name="left">
+      <modelElement href="game-server.enigne.uml#_aa-I43WBEeSWE87kHCDn6g"/>
+    </literals>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_alAOoHWBEeSWE87kHCDn6g" name="Options">
+    <modelElement href="game-server.enigne.uml#_aap_0HWBEeSWE87kHCDn6g"/>
+    <visualProperties xmi:id="_alAOoXWBEeSWE87kHCDn6g" position="242.0,988.0" size="-1.0,-1.0"/>
+    <keywords xmi:id="_alAOonWBEeSWE87kHCDn6g" keyword="static"/>
+    <visibility xmi:id="_alAOo3WBEeSWE87kHCDn6g" label="+"/>
+    <attributes xmi:id="_alAOpHWBEeSWE87kHCDn6g" defaultValue="4" name="MAX_PLAYERS_NUM" staticAttribute="true">
+      <modelElement href="game-server.enigne.uml#_aeyR4nWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_alAOpXWBEeSWE87kHCDn6g" label="+"/>
+      <cardinality xmi:id="_alAOpnWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_alAOp3WBEeSWE87kHCDn6g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_alAOqHWBEeSWE87kHCDn6g" defaultValue="5" name="SCORE_FOR_CELL" staticAttribute="true">
+      <modelElement href="game-server.enigne.uml#_aey48XWBEeSWE87kHCDn6g"/>
+      <visibility xmi:id="_alAOqXWBEeSWE87kHCDn6g" label="+"/>
+      <cardinality xmi:id="_alAOqnWBEeSWE87kHCDn6g" label="1" max="1" min="1"/>
+      <type xmi:id="_alAOq3WBEeSWE87kHCDn6g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_akOLgHWBEeSWE87kHCDn6g" name="PlayerComp">
+    <modelElement href="game-server.enigne.uml#_aa7soHWBEeSWE87kHCDn6g"/>
+    <visualProperties xmi:id="_akOLgXWBEeSWE87kHCDn6g" position="466.0,988.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_akOLgnWBEeSWE87kHCDn6g" label="+"/>
+    <operations xmi:id="_akOLg3WBEeSWE87kHCDn6g" name="compare">
+      <modelElement href="game-server.enigne.uml#_aebskHWBEeSWE87kHCDn6g"/>
+      <stereotypes xmi:id="_akOLhHWBEeSWE87kHCDn6g" name="LegacyStyledElement">
+        <modelElement href="game-server.enigne.uml#_aecToHWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_akOLhXWBEeSWE87kHCDn6g" name="Annotations">
+        <modelElement href="game-server.enigne.uml#_aecToXWBEeSWE87kHCDn6g"/>
+      </stereotypes>
+      <visibility xmi:id="_akOLhnWBEeSWE87kHCDn6g" label="+"/>
+      <outParameters xmi:id="_akOLh3WBEeSWE87kHCDn6g">
+        <modelElement href="game-server.enigne.uml#_aebsk3WBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akOLiHWBEeSWE87kHCDn6g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_akOLiXWBEeSWE87kHCDn6g" name="a">
+        <modelElement href="game-server.enigne.uml#_aebskXWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akOLinWBEeSWE87kHCDn6g" name="Player">
+          <modelElement href="game-server.enigne.uml#_aa20IHWBEeSWE87kHCDn6g"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_akOLi3WBEeSWE87kHCDn6g" name="b">
+        <modelElement href="game-server.enigne.uml#_aebsknWBEeSWE87kHCDn6g"/>
+        <type xmi:id="_akOLjHWBEeSWE87kHCDn6g" name="Player">
+          <modelElement href="game-server.enigne.uml#_aa20IHWBEeSWE87kHCDn6g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
